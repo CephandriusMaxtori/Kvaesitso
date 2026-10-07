@@ -16,6 +16,9 @@
 # Java class files
 *.class
 
+# Private Files
+kvaesitso.jks
+
 # Generated files
 bin/
 gen/

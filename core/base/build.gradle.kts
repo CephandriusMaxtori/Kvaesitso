@@ -42,9 +42,17 @@ android {
             jvmTarget.set(JvmTarget.JVM_11)
         }
     }
+
     namespace = "de.mm20.launcher2.base"
+
     buildFeatures {
         buildConfig = true
+    }
+
+    // ↓↓↓ ADD THIS BLOCK ↓↓↓
+    lint {
+        abortOnError = true
+        baseline = file("lint-baseline.xml")
     }
 }
 
