@@ -94,14 +94,16 @@ class FlashlightService(private val context: Context) {
         val cameraManager = cameraManager ?: return
         if (listening || !hasFlashlight) return
         val cameraId = findFlashCameraId() ?: return
+        // Set before registering, because the callback may be invoked immediately.
+        flashCameraId = cameraId
         try {
             cameraManager.registerTorchCallback(
                 ContextCompat.getMainExecutor(context),
                 torchCallback,
             )
-            flashCameraId = cameraId
             listening = true
         } catch (e: Exception) {
+            flashCameraId = null
             CrashReporter.logException(e)
         }
     }

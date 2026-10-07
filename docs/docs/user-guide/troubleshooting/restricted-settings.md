@@ -36,6 +36,9 @@ The notification access permission is used to display notification badges, and t
 
 The accessibility service is used to perform certain gesture actions, like turning the screen off, or opening the notification shade.
 
+> [!NOTE]
+> The flashlight gesture action does not use the accessibility service, but the camera permission.
+
 1. Try to enable the accessibility service as you would normally do. If you sideloaded the APK, you will find that Kvaesitso is disabled:
 
 <img src="/img/accessibility-service-1.png" width="300"/>
