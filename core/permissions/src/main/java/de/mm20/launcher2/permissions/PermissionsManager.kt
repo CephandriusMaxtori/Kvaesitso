@@ -70,6 +70,7 @@ enum class PermissionGroup {
     ManageProfiles,
     Call,
     LocalNetwork,
+    Camera,
 }
 
 internal class PermissionsManagerImpl(
@@ -106,6 +107,9 @@ internal class PermissionsManagerImpl(
     )
     private val localNetworkPermissionState = MutableStateFlow(
         checkPermissionOnce(PermissionGroup.LocalNetwork)
+    )
+    private val cameraPermissionState = MutableStateFlow(
+        checkPermissionOnce(PermissionGroup.Camera)
     )
 
     override fun requestPermission(context: AppCompatActivity, permissionGroup: PermissionGroup) {
@@ -205,6 +209,14 @@ internal class PermissionsManagerImpl(
                     permissionGroup.ordinal
                 )
             }
+
+            PermissionGroup.Camera -> {
+                ActivityCompat.requestPermissions(
+                    context,
+                    cameraPermissions,
+                    permissionGroup.ordinal
+                )
+            }
         }
     }
 
@@ -258,6 +270,9 @@ internal class PermissionsManagerImpl(
             PermissionGroup.LocalNetwork -> {
                 !isAtLeastApiLevel(37) || localNetworkPermissions.all { context.checkPermission(it) }
             }
+            PermissionGroup.Camera -> {
+                cameraPermissions.all { context.checkPermission(it) }
+            }
         }
     }
 
@@ -274,6 +289,7 @@ internal class PermissionsManagerImpl(
             PermissionGroup.ManageProfiles -> manageProfilesPermissionState
             PermissionGroup.Call -> callPermissionState
             PermissionGroup.LocalNetwork -> localNetworkPermissionState
+            PermissionGroup.Camera -> cameraPermissionState
         }
     }
 
@@ -296,6 +312,7 @@ internal class PermissionsManagerImpl(
             PermissionGroup.ManageProfiles -> manageProfilesPermissionState.value = granted
             PermissionGroup.Call -> callPermissionState.value = granted
             PermissionGroup.LocalNetwork -> localNetworkPermissionState.value = granted
+            PermissionGroup.Camera -> cameraPermissionState.value = granted
         }
     }
 
@@ -303,6 +320,7 @@ internal class PermissionsManagerImpl(
         externalStoragePermissionState.value = checkPermissionOnce(PermissionGroup.ExternalStorage)
         appShortcutsPermissionState.value = checkPermissionOnce(PermissionGroup.AppShortcuts)
         manageProfilesPermissionState.value = checkPermissionOnce(PermissionGroup.ManageProfiles)
+        cameraPermissionState.value = checkPermissionOnce(PermissionGroup.Camera)
     }
 
     override fun reportNotificationListenerState(running: Boolean) {
@@ -327,5 +345,6 @@ internal class PermissionsManagerImpl(
         )
         private val callPermissions = arrayOf(Manifest.permission.CALL_PHONE)
         private val localNetworkPermissions = arrayOf(Manifest.permission.ACCESS_LOCAL_NETWORK)
+        private val cameraPermissions = arrayOf(Manifest.permission.CAMERA)
     }
 }

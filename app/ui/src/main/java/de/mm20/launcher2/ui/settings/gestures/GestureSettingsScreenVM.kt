@@ -3,6 +3,7 @@ package de.mm20.launcher2.ui.settings.gestures
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import de.mm20.launcher2.globalactions.FlashlightService
 import de.mm20.launcher2.icons.IconService
 import de.mm20.launcher2.icons.LauncherIcon
 import de.mm20.launcher2.permissions.PermissionGroup
@@ -33,9 +34,19 @@ internal class GestureSettingsScreenVM : ViewModel(), KoinComponent {
     private val searchableRepository: SavableSearchableRepository by inject()
     private val iconService: IconService by inject()
     private val widgetRepository: WidgetRepository by inject()
+    private val flashlightService: FlashlightService by inject()
 
     val hasPermission = permissionsManager.hasPermission(PermissionGroup.Accessibility)
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(), null)
+
+    val hasCameraPermission = permissionsManager.hasPermission(PermissionGroup.Camera)
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(), null)
+
+    /**
+     * Whether the flashlight gesture action can be offered at all, i.e. this device has a camera
+     * flash that can be used as a flashlight.
+     */
+    val hasFlashlight: Boolean = flashlightService.hasFlashlight
 
     val swipeDown = gestureSettings.swipeDown
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(), null)
@@ -126,6 +137,11 @@ internal class GestureSettingsScreenVM : ViewModel(), KoinComponent {
 
     fun requestPermission(context: AppCompatActivity) {
         permissionsManager.requestPermission(context, PermissionGroup.Accessibility)
+    }
+
+    fun requestCameraPermission(context: AppCompatActivity) {
+        permissionsManager.requestPermission(context, PermissionGroup.Camera)
+        flashlightService.startListening()
     }
 
     fun getIcon(searchable: SavableSearchable?, size: Int): Flow<LauncherIcon?> {

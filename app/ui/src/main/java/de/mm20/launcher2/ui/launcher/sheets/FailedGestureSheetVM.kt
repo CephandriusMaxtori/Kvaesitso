@@ -14,8 +14,12 @@ class FailedGestureSheetVM : ViewModel(), KoinComponent {
     private val permissionsManager: PermissionsManager by inject()
     private val gestureSettings: GestureSettings by inject()
 
-    fun requestPermission(context: AppCompatActivity) {
-        permissionsManager.requestPermission(context, PermissionGroup.Accessibility)
+    fun requestPermission(context: AppCompatActivity, action: GestureAction) {
+        val permissionGroup = when (action) {
+            is GestureAction.Flashlight -> PermissionGroup.Camera
+            else -> PermissionGroup.Accessibility
+        }
+        permissionsManager.requestPermission(context, permissionGroup)
     }
 
     fun disableGesture(gesture: Gesture) {

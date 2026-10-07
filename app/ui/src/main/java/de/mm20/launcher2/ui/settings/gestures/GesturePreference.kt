@@ -256,6 +256,17 @@ internal fun GesturePreference(
                                     }
                                 )
                             }
+                            if (options.contains(GestureAction.Flashlight::class)) {
+                                GestureItem(
+                                    title = stringResource(R.string.gesture_action_flashlight),
+                                    icon = R.drawable.flashlight_on_24px,
+                                    selected = value is GestureAction.Flashlight,
+                                    onClick = {
+                                        onValueChanged(GestureAction.Flashlight, null)
+                                        showSheet = false
+                                    }
+                                )
+                            }
                         }
                     }
                     item {
@@ -399,6 +410,7 @@ private fun getActionLabel(
 ): String {
     return when (action) {
         GestureAction.Feed -> resources.getString(R.string.gesture_action_feed)
+        GestureAction.Flashlight -> resources.getString(R.string.gesture_action_flashlight)
         is GestureAction.Launch -> {
             shortcutOptions.find { it.key == action.key }
                 ?.let { it.labelOverride ?: it.label }

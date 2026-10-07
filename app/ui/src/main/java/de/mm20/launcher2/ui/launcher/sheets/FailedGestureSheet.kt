@@ -44,6 +44,7 @@ fun FailedGestureSheet(
             is GestureAction.QuickSettings -> R.string.gesture_action_quick_settings
             is GestureAction.Recents -> R.string.gesture_action_recents
             is GestureAction.PowerMenu -> R.string.gesture_action_power_menu
+            is GestureAction.Flashlight -> R.string.gesture_action_flashlight
             else -> R.string.gesture_action_none
         })
         val gestureName = stringResource(when(it.gesture) {
@@ -70,7 +71,13 @@ fun FailedGestureSheet(
             val context = LocalLifecycleOwner.current
             MissingPermissionBanner(
                 modifier = Modifier.padding(vertical = 16.dp),
-                text = stringResource(id = R.string.missing_permission_accessibility_gesture_failed),
+                text = stringResource(
+                    id = if (it.action is GestureAction.Flashlight) {
+                        R.string.missing_permission_camera_gesture_failed
+                    } else {
+                        R.string.missing_permission_accessibility_gesture_failed
+                    }
+                ),
                 secondaryAction = {
                     OutlinedButton(onClick = {
                         viewModel.disableGesture(it.gesture)
@@ -80,7 +87,7 @@ fun FailedGestureSheet(
                     }
                 },
                 onClick = {
-                    viewModel.requestPermission(context as AppCompatActivity)
+                    viewModel.requestPermission(context as AppCompatActivity, it.action)
                     onDismiss()
                 })
         }

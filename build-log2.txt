@@ -1,0 +1,1281 @@
+﻿.\gradlew.bat : WARNING: A restricted method in java.lang.System has been called
+At line:1 char:52
++ ... droid\Sdk"; .\gradlew.bat :app:app:assembleDebug --console=plain 2>&1 ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (WARNING: A rest...has been called:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an 
+unnamed module (file:/C:/Users/melis/.gradle/wrapper/dists/gradle-9.5.0-bin/bvnork1r7n8i6kp5cnkibsc9q/gradle-9.5.0/lib/
+native-platform-0.22-milestone-29.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Calculating task graph as no cached configuration is available for tasks: :app:app:assembleDebug
+> Task :core:crashreporter:preBuild UP-TO-DATE
+> Task :app:app:preBuild UP-TO-DATE
+> Task :core:compat:preBuild UP-TO-DATE
+> Task :app:ui:preBuild UP-TO-DATE
+> Task :core:ktx:preBuild UP-TO-DATE
+> Task :core:compat:preDebugBuild UP-TO-DATE
+> Task :core:crashreporter:preDebugBuild UP-TO-DATE
+> Task :app:app:preDefaultDebugBuild UP-TO-DATE
+> Task :core:devicepose:preBuild UP-TO-DATE
+> Task :core:devicepose:preDebugBuild UP-TO-DATE
+> Task :core:base:preBuild UP-TO-DATE
+> Task :app:ui:preDebugBuild UP-TO-DATE
+> Task :core:i18n:preBuild UP-TO-DATE
+> Task :core:ktx:preDebugBuild UP-TO-DATE
+> Task :core:base:preDebugBuild UP-TO-DATE
+> Task :app:app:mergeDefaultDebugNativeDebugMetadata NO-SOURCE
+> Task :core:compat:extractDebugSupportedLocales
+> Task :core:i18n:preDebugBuild UP-TO-DATE
+> Task :core:crashreporter:extractDebugSupportedLocales
+> Task :app:ui:extractDebugSupportedLocales
+> Task :core:permissions:preBuild UP-TO-DATE
+> Task :core:permissions:preDebugBuild UP-TO-DATE
+> Task :core:devicepose:extractDebugSupportedLocales
+> Task :core:preferences:preBuild UP-TO-DATE
+> Task :core:base:extractDebugSupportedLocales
+> Task :core:profiles:preBuild UP-TO-DATE
+> Task :core:profiles:preDebugBuild UP-TO-DATE
+> Task :core:preferences:preDebugBuild UP-TO-DATE
+> Task :app:app:mapDefaultDebugSourceSetPaths
+> Task :core:shared:preBuild UP-TO-DATE
+> Task :core:shared:preDebugBuild UP-TO-DATE
+> Task :core:ktx:extractDebugSupportedLocales FROM-CACHE
+> Task :data:applications:preBuild UP-TO-DATE
+> Task :data:applications:preDebugBuild UP-TO-DATE
+> Task :core:profiles:extractDebugSupportedLocales FROM-CACHE
+> Task :data:appshortcuts:preBuild UP-TO-DATE
+> Task :data:appshortcuts:preDebugBuild UP-TO-DATE
+> Task :core:shared:extractDebugSupportedLocales FROM-CACHE
+> Task :data:calculator:preBuild UP-TO-DATE
+> Task :data:calculator:preDebugBuild UP-TO-DATE
+> Task :core:permissions:extractDebugSupportedLocales FROM-CACHE
+> Task :data:calendar:preBuild UP-TO-DATE
+> Task :data:calendar:preDebugBuild UP-TO-DATE
+> Task :data:applications:extractDebugSupportedLocales FROM-CACHE
+> Task :data:appshortcuts:extractDebugSupportedLocales FROM-CACHE
+> Task :data:contacts:preBuild UP-TO-DATE
+> Task :data:currencies:preBuild UP-TO-DATE
+> Task :data:contacts:preDebugBuild UP-TO-DATE
+> Task :data:currencies:preDebugBuild UP-TO-DATE
+> Task :core:preferences:extractDebugSupportedLocales FROM-CACHE
+> Task :data:customattrs:preBuild UP-TO-DATE
+> Task :data:customattrs:preDebugBuild UP-TO-DATE
+> Task :app:app:generateDefaultDebugBuildConfig
+> Task :data:database:preBuild UP-TO-DATE
+> Task :data:database:preDebugBuild UP-TO-DATE
+> Task :data:calculator:extractDebugSupportedLocales FROM-CACHE
+> Task :data:files:preBuild UP-TO-DATE
+> Task :data:files:preDebugBuild UP-TO-DATE
+> Task :data:calendar:extractDebugSupportedLocales FROM-CACHE
+> Task :data:i18n:preBuild UP-TO-DATE
+> Task :data:i18n:preDebugBuild UP-TO-DATE
+> Task :app:app:extractDefaultDebugSupportedLocales
+> Task :data:locations:preBuild UP-TO-DATE
+> Task :data:locations:preDebugBuild UP-TO-DATE
+> Task :data:database:extractDebugSupportedLocales FROM-CACHE
+> Task :data:customattrs:extractDebugSupportedLocales FROM-CACHE
+> Task :data:notifications:preBuild UP-TO-DATE
+> Task :data:notifications:preDebugBuild UP-TO-DATE
+> Task :data:plugins:preBuild UP-TO-DATE
+> Task :data:contacts:extractDebugSupportedLocales FROM-CACHE
+> Task :data:plugins:preDebugBuild UP-TO-DATE
+> Task :data:currencies:extractDebugSupportedLocales FROM-CACHE
+> Task :data:search-actions:preBuild UP-TO-DATE
+> Task :data:searchable:preBuild UP-TO-DATE
+> Task :data:search-actions:preDebugBuild UP-TO-DATE
+> Task :data:searchable:preDebugBuild UP-TO-DATE
+> Task :core:i18n:extractDebugSupportedLocales
+> Task :data:themes:preBuild UP-TO-DATE
+> Task :data:themes:preDebugBuild UP-TO-DATE
+> Task :data:files:extractDebugSupportedLocales FROM-CACHE
+> Task :data:unitconverter:preBuild UP-TO-DATE
+> Task :data:unitconverter:preDebugBuild UP-TO-DATE
+> Task :data:search-actions:extractDebugSupportedLocales FROM-CACHE
+> Task :data:notifications:extractDebugSupportedLocales FROM-CACHE
+> Task :data:websites:preBuild UP-TO-DATE
+> Task :data:websites:preDebugBuild UP-TO-DATE
+> Task :data:weather:preBuild UP-TO-DATE
+> Task :data:weather:preDebugBuild UP-TO-DATE
+> Task :data:locations:extractDebugSupportedLocales FROM-CACHE
+> Task :data:widgets:preBuild UP-TO-DATE
+> Task :data:widgets:preDebugBuild UP-TO-DATE
+> Task :data:themes:extractDebugSupportedLocales FROM-CACHE
+> Task :data:wikipedia:preBuild UP-TO-DATE
+> Task :data:wikipedia:preDebugBuild UP-TO-DATE
+> Task :data:unitconverter:extractDebugSupportedLocales FROM-CACHE
+> Task :data:plugins:extractDebugSupportedLocales FROM-CACHE
+> Task :libs:address-formatter:preBuild UP-TO-DATE
+> Task :libs:address-formatter:preDebugBuild UP-TO-DATE
+> Task :libs:material-color-utilities:preBuild UP-TO-DATE
+> Task :libs:material-color-utilities:preDebugBuild UP-TO-DATE
+> Task :data:i18n:extractDebugSupportedLocales FROM-CACHE
+> Task :data:searchable:extractDebugSupportedLocales FROM-CACHE
+> Task :libs:nextcloud:preBuild UP-TO-DATE
+> Task :libs:owncloud:preBuild UP-TO-DATE
+> Task :libs:owncloud:preDebugBuild UP-TO-DATE
+> Task :libs:nextcloud:preDebugBuild UP-TO-DATE
+> Task :data:widgets:extractDebugSupportedLocales FROM-CACHE
+> Task :libs:webdav:preBuild UP-TO-DATE
+> Task :libs:webdav:preDebugBuild UP-TO-DATE
+> Task :data:websites:extractDebugSupportedLocales
+> Task :services:accounts:preBuild UP-TO-DATE
+> Task :services:accounts:preDebugBuild UP-TO-DATE
+> Task :libs:address-formatter:extractDebugSupportedLocales FROM-CACHE
+> Task :services:backup:preBuild UP-TO-DATE
+> Task :services:backup:preDebugBuild UP-TO-DATE
+> Task :data:weather:extractDebugSupportedLocales
+> Task :services:badges:preBuild UP-TO-DATE
+> Task :services:badges:preDebugBuild UP-TO-DATE
+> Task :libs:material-color-utilities:extractDebugSupportedLocales FROM-CACHE
+> Task :services:favorites:preBuild UP-TO-DATE
+> Task :services:favorites:preDebugBuild UP-TO-DATE
+> Task :services:accounts:extractDebugSupportedLocales FROM-CACHE
+> Task :services:feed:preBuild UP-TO-DATE
+> Task :services:feed:preDebugBuild UP-TO-DATE
+> Task :services:badges:extractDebugSupportedLocales FROM-CACHE
+> Task :services:global-actions:preBuild UP-TO-DATE
+> Task :services:global-actions:preDebugBuild UP-TO-DATE
+> Task :services:backup:extractDebugSupportedLocales FROM-CACHE
+> Task :services:icons:preBuild UP-TO-DATE
+> Task :services:icons:preDebugBuild UP-TO-DATE
+> Task :services:favorites:extractDebugSupportedLocales FROM-CACHE
+> Task :services:music:preBuild UP-TO-DATE
+> Task :services:music:preDebugBuild UP-TO-DATE
+> Task :libs:webdav:extractDebugSupportedLocales FROM-CACHE
+> Task :services:plugins:preBuild UP-TO-DATE
+> Task :services:plugins:preDebugBuild UP-TO-DATE
+> Task :libs:owncloud:extractDebugSupportedLocales
+> Task :services:search:preBuild UP-TO-DATE
+> Task :data:wikipedia:extractDebugSupportedLocales
+> Task :services:search:preDebugBuild UP-TO-DATE
+> Task :services:tags:preBuild UP-TO-DATE
+> Task :services:tags:preDebugBuild UP-TO-DATE
+> Task :services:feed:extractDebugSupportedLocales FROM-CACHE
+> Task :services:widgets:preBuild UP-TO-DATE
+> Task :services:widgets:preDebugBuild UP-TO-DATE
+> Task :libs:nextcloud:extractDebugSupportedLocales
+> Task :services:search:extractDebugSupportedLocales FROM-CACHE
+> Task :services:plugins:extractDebugSupportedLocales FROM-CACHE
+> Task :services:icons:extractDebugSupportedLocales FROM-CACHE
+> Task :core:base:processDebugNavigationResources UP-TO-DATE
+> Task :core:compat:processDebugNavigationResources UP-TO-DATE
+> Task :app:ui:processDebugNavigationResources UP-TO-DATE
+> Task :services:tags:extractDebugSupportedLocales FROM-CACHE
+> Task :services:widgets:extractDebugSupportedLocales FROM-CACHE
+> Task :services:global-actions:extractDebugSupportedLocales
+> Task :services:music:extractDebugSupportedLocales
+> Task :core:devicepose:processDebugNavigationResources UP-TO-DATE
+> Task :core:crashreporter:processDebugNavigationResources UP-TO-DATE
+> Task :core:permissions:processDebugNavigationResources UP-TO-DATE
+> Task :core:preferences:processDebugNavigationResources UP-TO-DATE
+> Task :core:i18n:processDebugNavigationResources UP-TO-DATE
+> Task :core:profiles:processDebugNavigationResources UP-TO-DATE
+> Task :core:shared:processDebugNavigationResources UP-TO-DATE
+> Task :data:applications:processDebugNavigationResources UP-TO-DATE
+> Task :data:calculator:processDebugNavigationResources UP-TO-DATE
+> Task :core:ktx:processDebugNavigationResources UP-TO-DATE
+> Task :data:currencies:processDebugNavigationResources UP-TO-DATE
+> Task :data:appshortcuts:processDebugNavigationResources UP-TO-DATE
+> Task :data:contacts:processDebugNavigationResources UP-TO-DATE
+> Task :data:calendar:processDebugNavigationResources UP-TO-DATE
+> Task :data:database:processDebugNavigationResources UP-TO-DATE
+> Task :data:locations:processDebugNavigationResources UP-TO-DATE
+> Task :data:customattrs:processDebugNavigationResources UP-TO-DATE
+> Task :data:files:processDebugNavigationResources UP-TO-DATE
+> Task :data:search-actions:processDebugNavigationResources UP-TO-DATE
+> Task :data:searchable:processDebugNavigationResources UP-TO-DATE
+> Task :data:themes:processDebugNavigationResources UP-TO-DATE
+> Task :data:unitconverter:processDebugNavigationResources UP-TO-DATE
+> Task :data:websites:processDebugNavigationResources UP-TO-DATE
+> Task :data:weather:processDebugNavigationResources UP-TO-DATE
+> Task :data:widgets:processDebugNavigationResources UP-TO-DATE
+> Task :libs:address-formatter:processDebugNavigationResources UP-TO-DATE
+> Task :data:wikipedia:processDebugNavigationResources UP-TO-DATE
+> Task :libs:material-color-utilities:processDebugNavigationResources UP-TO-DATE
+> Task :libs:owncloud:processDebugNavigationResources UP-TO-DATE
+> Task :libs:webdav:processDebugNavigationResources UP-TO-DATE
+> Task :data:notifications:processDebugNavigationResources UP-TO-DATE
+> Task :services:accounts:processDebugNavigationResources UP-TO-DATE
+> Task :services:backup:processDebugNavigationResources UP-TO-DATE
+> Task :services:badges:processDebugNavigationResources UP-TO-DATE
+> Task :services:feed:processDebugNavigationResources UP-TO-DATE
+> Task :services:global-actions:processDebugNavigationResources UP-TO-DATE
+> Task :services:favorites:processDebugNavigationResources UP-TO-DATE
+> Task :services:icons:processDebugNavigationResources UP-TO-DATE
+> Task :services:music:processDebugNavigationResources UP-TO-DATE
+> Task :services:search:processDebugNavigationResources UP-TO-DATE
+> Task :services:plugins:processDebugNavigationResources UP-TO-DATE
+> Task :services:widgets:processDebugNavigationResources UP-TO-DATE
+> Task :app:ui:generateDebugResources UP-TO-DATE
+> Task :core:base:generateDebugResources UP-TO-DATE
+> Task :services:tags:processDebugNavigationResources UP-TO-DATE
+> Task :core:i18n:generateDebugResources UP-TO-DATE
+> Task :app:ui:packageDebugResources UP-TO-DATE
+> Task :core:base:packageDebugResources UP-TO-DATE
+> Task :app:ui:parseDebugLocalResources UP-TO-DATE
+> Task :core:base:parseDebugLocalResources UP-TO-DATE
+> Task :core:ktx:generateDebugResources UP-TO-DATE
+> Task :core:shared:generateDebugResources UP-TO-DATE
+> Task :core:i18n:packageDebugResources UP-TO-DATE
+> Task :core:ktx:packageDebugResources UP-TO-DATE
+> Task :core:i18n:parseDebugLocalResources UP-TO-DATE
+> Task :core:shared:packageDebugResources UP-TO-DATE
+> Task :libs:nextcloud:processDebugNavigationResources UP-TO-DATE
+> Task :libs:material-color-utilities:generateDebugResources UP-TO-DATE
+> Task :core:i18n:generateDebugRFile UP-TO-DATE
+> Task :libs:material-color-utilities:packageDebugResources UP-TO-DATE
+> Task :libs:material-color-utilities:parseDebugLocalResources UP-TO-DATE
+> Task :core:ktx:parseDebugLocalResources UP-TO-DATE
+> Task :core:compat:generateDebugResources UP-TO-DATE
+> Task :libs:material-color-utilities:generateDebugRFile UP-TO-DATE
+> Task :core:ktx:generateDebugRFile UP-TO-DATE
+> Task :core:crashreporter:generateDebugResources UP-TO-DATE
+> Task :core:devicepose:generateDebugResources UP-TO-DATE
+> Task :core:crashreporter:packageDebugResources UP-TO-DATE
+> Task :core:crashreporter:parseDebugLocalResources UP-TO-DATE
+> Task :core:devicepose:packageDebugResources UP-TO-DATE
+> Task :core:permissions:generateDebugResources UP-TO-DATE
+> Task :core:devicepose:parseDebugLocalResources UP-TO-DATE
+> Task :core:shared:parseDebugLocalResources UP-TO-DATE
+> Task :data:i18n:processDebugNavigationResources FROM-CACHE
+> Task :core:preferences:generateDebugResources UP-TO-DATE
+> Task :core:preferences:packageDebugResources UP-TO-DATE
+> Task :core:shared:generateDebugRFile UP-TO-DATE
+> Task :core:devicepose:generateDebugRFile UP-TO-DATE
+> Task :core:profiles:generateDebugResources UP-TO-DATE
+> Task :core:preferences:parseDebugLocalResources UP-TO-DATE
+> Task :data:applications:generateDebugResources UP-TO-DATE
+> Task :core:compat:packageDebugResources UP-TO-DATE
+> Task :data:applications:packageDebugResources UP-TO-DATE
+> Task :core:profiles:packageDebugResources UP-TO-DATE
+> Task :core:profiles:parseDebugLocalResources UP-TO-DATE
+> Task :core:base:generateDebugRFile UP-TO-DATE
+> Task :data:applications:parseDebugLocalResources UP-TO-DATE
+> Task :core:compat:parseDebugLocalResources UP-TO-DATE
+> Task :data:appshortcuts:generateDebugResources UP-TO-DATE
+> Task :data:calculator:generateDebugResources UP-TO-DATE
+> Task :data:appshortcuts:packageDebugResources UP-TO-DATE
+> Task :data:calculator:packageDebugResources UP-TO-DATE
+> Task :core:compat:generateDebugRFile UP-TO-DATE
+> Task :core:crashreporter:generateDebugRFile UP-TO-DATE
+> Task :data:appshortcuts:parseDebugLocalResources UP-TO-DATE
+> Task :data:calendar:generateDebugResources UP-TO-DATE
+> Task :data:contacts:generateDebugResources UP-TO-DATE
+> Task :data:contacts:packageDebugResources UP-TO-DATE
+> Task :core:permissions:packageDebugResources UP-TO-DATE
+> Task :data:calendar:packageDebugResources UP-TO-DATE
+> Task :core:permissions:parseDebugLocalResources UP-TO-DATE
+> Task :data:contacts:parseDebugLocalResources UP-TO-DATE
+> Task :data:calendar:parseDebugLocalResources UP-TO-DATE
+> Task :data:customattrs:generateDebugResources UP-TO-DATE
+> Task :data:database:generateDebugResources UP-TO-DATE
+> Task :data:database:packageDebugResources UP-TO-DATE
+> Task :data:customattrs:packageDebugResources UP-TO-DATE
+> Task :data:database:parseDebugLocalResources UP-TO-DATE
+> Task :data:customattrs:parseDebugLocalResources UP-TO-DATE
+> Task :data:searchable:generateDebugResources UP-TO-DATE
+> Task :data:wikipedia:generateDebugResources UP-TO-DATE
+> Task :data:calculator:parseDebugLocalResources UP-TO-DATE
+> Task :data:plugins:processDebugNavigationResources FROM-CACHE
+> Task :data:files:generateDebugResources UP-TO-DATE
+> Task :core:permissions:generateDebugRFile UP-TO-DATE
+> Task :data:searchable:packageDebugResources UP-TO-DATE
+> Task :data:searchable:parseDebugLocalResources UP-TO-DATE
+> Task :data:files:packageDebugResources UP-TO-DATE
+> Task :libs:nextcloud:generateDebugResources UP-TO-DATE
+> Task :data:files:parseDebugLocalResources UP-TO-DATE
+> Task :libs:webdav:generateDebugResources UP-TO-DATE
+> Task :libs:nextcloud:packageDebugResources UP-TO-DATE
+> Task :data:wikipedia:packageDebugResources UP-TO-DATE
+> Task :libs:nextcloud:parseDebugLocalResources UP-TO-DATE
+> Task :core:profiles:generateDebugRFile UP-TO-DATE
+> Task :libs:webdav:packageDebugResources UP-TO-DATE
+> Task :libs:owncloud:generateDebugResources UP-TO-DATE
+> Task :libs:webdav:parseDebugLocalResources UP-TO-DATE
+> Task :data:wikipedia:parseDebugLocalResources UP-TO-DATE
+> Task :core:preferences:generateDebugRFile UP-TO-DATE
+> Task :data:locations:generateDebugResources UP-TO-DATE
+> Task :libs:owncloud:packageDebugResources UP-TO-DATE
+> Task :data:applications:generateDebugRFile UP-TO-DATE
+> Task :libs:webdav:generateDebugRFile UP-TO-DATE
+> Task :data:calendar:generateDebugRFile UP-TO-DATE
+> Task :data:calculator:generateDebugRFile UP-TO-DATE
+> Task :data:appshortcuts:generateDebugRFile UP-TO-DATE
+> Task :data:database:generateDebugRFile UP-TO-DATE
+> Task :libs:owncloud:parseDebugLocalResources UP-TO-DATE
+> Task :data:contacts:generateDebugRFile UP-TO-DATE
+> Task :data:wikipedia:generateDebugRFile UP-TO-DATE
+> Task :libs:address-formatter:generateDebugResources UP-TO-DATE
+> Task :data:locations:packageDebugResources UP-TO-DATE
+> Task :data:locations:parseDebugLocalResources UP-TO-DATE
+> Task :data:notifications:generateDebugResources UP-TO-DATE
+> Task :libs:address-formatter:packageDebugResources UP-TO-DATE
+> Task :libs:address-formatter:parseDebugLocalResources UP-TO-DATE
+> Task :libs:nextcloud:generateDebugRFile UP-TO-DATE
+> Task :libs:address-formatter:generateDebugRFile UP-TO-DATE
+> Task :data:search-actions:generateDebugResources UP-TO-DATE
+> Task :data:searchable:generateDebugRFile UP-TO-DATE
+> Task :libs:owncloud:generateDebugRFile UP-TO-DATE
+> Task :data:locations:generateDebugRFile UP-TO-DATE
+> Task :data:themes:generateDebugResources UP-TO-DATE
+> Task :data:customattrs:generateDebugRFile UP-TO-DATE
+> Task :data:files:generateDebugRFile UP-TO-DATE
+> Task :data:unitconverter:generateDebugResources UP-TO-DATE
+> Task :data:currencies:generateDebugResources UP-TO-DATE
+> Task :data:unitconverter:packageDebugResources UP-TO-DATE
+> Task :data:themes:packageDebugResources UP-TO-DATE
+> Task :data:notifications:packageDebugResources UP-TO-DATE
+> Task :data:themes:parseDebugLocalResources UP-TO-DATE
+> Task :data:currencies:packageDebugResources UP-TO-DATE
+> Task :data:notifications:parseDebugLocalResources UP-TO-DATE
+> Task :data:currencies:parseDebugLocalResources UP-TO-DATE
+> Task :data:notifications:generateDebugRFile UP-TO-DATE
+> Task :data:unitconverter:parseDebugLocalResources UP-TO-DATE
+> Task :data:currencies:generateDebugRFile UP-TO-DATE
+> Task :data:weather:generateDebugResources UP-TO-DATE
+> Task :data:websites:generateDebugResources UP-TO-DATE
+> Task :data:websites:packageDebugResources UP-TO-DATE
+> Task :data:weather:packageDebugResources UP-TO-DATE
+> Task :data:weather:parseDebugLocalResources UP-TO-DATE
+> Task :data:websites:parseDebugLocalResources UP-TO-DATE
+> Task :data:themes:generateDebugRFile UP-TO-DATE
+> Task :data:websites:generateDebugRFile UP-TO-DATE
+> Task :data:weather:generateDebugRFile UP-TO-DATE
+> Task :data:widgets:generateDebugResources UP-TO-DATE
+> Task :data:unitconverter:generateDebugRFile UP-TO-DATE
+> Task :services:music:generateDebugResources UP-TO-DATE
+> Task :data:search-actions:packageDebugResources UP-TO-DATE
+> Task :services:backup:generateDebugResources UP-TO-DATE
+> Task :services:accounts:generateDebugResources UP-TO-DATE
+> Task :services:backup:packageDebugResources UP-TO-DATE
+> Task :data:search-actions:parseDebugLocalResources UP-TO-DATE
+> Task :services:music:packageDebugResources UP-TO-DATE
+> Task :services:backup:parseDebugLocalResources UP-TO-DATE
+> Task :services:music:parseDebugLocalResources UP-TO-DATE
+> Task :services:accounts:packageDebugResources UP-TO-DATE
+> Task :data:widgets:packageDebugResources UP-TO-DATE
+> Task :services:accounts:parseDebugLocalResources UP-TO-DATE
+> Task :data:widgets:parseDebugLocalResources UP-TO-DATE
+> Task :services:badges:generateDebugResources UP-TO-DATE
+> Task :services:badges:packageDebugResources UP-TO-DATE
+> Task :services:music:generateDebugRFile UP-TO-DATE
+> Task :services:badges:parseDebugLocalResources UP-TO-DATE
+> Task :services:backup:generateDebugRFile UP-TO-DATE
+> Task :data:search-actions:generateDebugRFile UP-TO-DATE
+> Task :services:accounts:generateDebugRFile UP-TO-DATE
+> Task :services:feed:generateDebugResources UP-TO-DATE
+> Task :services:global-actions:generateDebugResources UP-TO-DATE
+> Task :data:widgets:generateDebugRFile UP-TO-DATE
+> Task :services:icons:generateDebugResources UP-TO-DATE
+> Task :services:global-actions:packageDebugResources UP-TO-DATE
+> Task :services:global-actions:parseDebugLocalResources UP-TO-DATE
+> Task :services:icons:packageDebugResources UP-TO-DATE
+> Task :services:icons:parseDebugLocalResources UP-TO-DATE
+> Task :services:favorites:generateDebugResources UP-TO-DATE
+> Task :services:global-actions:generateDebugRFile UP-TO-DATE
+> Task :services:plugins:generateDebugResources UP-TO-DATE
+> Task :services:favorites:packageDebugResources UP-TO-DATE
+> Task :services:badges:generateDebugRFile UP-TO-DATE
+> Task :services:favorites:parseDebugLocalResources UP-TO-DATE
+> Task :services:search:generateDebugResources UP-TO-DATE
+> Task :services:plugins:packageDebugResources UP-TO-DATE
+> Task :services:feed:packageDebugResources UP-TO-DATE
+> Task :services:search:packageDebugResources UP-TO-DATE
+> Task :services:plugins:parseDebugLocalResources UP-TO-DATE
+> Task :services:feed:parseDebugLocalResources UP-TO-DATE
+> Task :services:favorites:generateDebugRFile UP-TO-DATE
+> Task :services:search:parseDebugLocalResources UP-TO-DATE
+> Task :services:tags:generateDebugResources UP-TO-DATE
+> Task :services:icons:generateDebugRFile UP-TO-DATE
+> Task :services:widgets:generateDebugResources UP-TO-DATE
+> Task :services:feed:generateDebugRFile UP-TO-DATE
+> Task :services:plugins:generateDebugRFile UP-TO-DATE
+> Task :services:search:generateDebugRFile UP-TO-DATE
+> Task :services:widgets:packageDebugResources UP-TO-DATE
+> Task :services:widgets:parseDebugLocalResources UP-TO-DATE
+> Task :services:widgets:generateDebugRFile UP-TO-DATE
+> Task :app:ui:generateDebugBuildConfig UP-TO-DATE
+> Task :core:base:generateDebugBuildConfig UP-TO-DATE
+> Task :core:i18n:compileDebugKotlin NO-SOURCE
+> Task :core:i18n:javaPreCompileDebug UP-TO-DATE
+> Task :core:i18n:compileDebugJavaWithJavac NO-SOURCE
+> Task :core:i18n:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :data:i18n:generateDebugResources FROM-CACHE
+> Task :services:tags:packageDebugResources UP-TO-DATE
+> Task :services:tags:parseDebugLocalResources UP-TO-DATE
+> Task :data:plugins:generateDebugResources FROM-CACHE
+> Task :app:ui:dataBindingMergeDependencyArtifactsDebug UP-TO-DATE
+> Task :services:tags:generateDebugRFile UP-TO-DATE
+> Task :app:ui:dataBindingGenBaseClassesDebug UP-TO-DATE
+> Task :core:ktx:javaPreCompileDebug UP-TO-DATE
+> Task :app:app:generateDefaultDebugResources
+> Task :core:shared:javaPreCompileDebug UP-TO-DATE
+> Task :core:ktx:compileDebugKotlin UP-TO-DATE
+> Task :core:ktx:compileDebugJavaWithJavac NO-SOURCE
+> Task :app:ui:generateDebugRFile UP-TO-DATE
+> Task :libs:material-color-utilities:javaPreCompileDebug UP-TO-DATE
+> Task :core:base:javaPreCompileDebug UP-TO-DATE
+> Task :core:ktx:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :core:compat:javaPreCompileDebug UP-TO-DATE
+> Task :core:crashreporter:generateDebugBuildConfig UP-TO-DATE
+> Task :core:crashreporter:javaPreCompileDebug UP-TO-DATE
+> Task :data:i18n:packageDebugResources
+> Task :data:plugins:packageDebugResources
+> Task :data:plugins:parseDebugLocalResources FROM-CACHE
+> Task :data:i18n:parseDebugLocalResources FROM-CACHE
+> Task :core:devicepose:compileDebugKotlin UP-TO-DATE
+> Task :core:devicepose:javaPreCompileDebug UP-TO-DATE
+> Task :core:devicepose:compileDebugJavaWithJavac NO-SOURCE
+> Task :core:devicepose:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :core:permissions:javaPreCompileDebug UP-TO-DATE
+> Task :core:preferences:javaPreCompileDebug UP-TO-DATE
+> Task :core:profiles:javaPreCompileDebug UP-TO-DATE
+> Task :data:applications:javaPreCompileDebug UP-TO-DATE
+> Task :data:appshortcuts:javaPreCompileDebug UP-TO-DATE
+> Task :data:calculator:javaPreCompileDebug UP-TO-DATE
+> Task :data:calendar:javaPreCompileDebug UP-TO-DATE
+> Task :data:contacts:javaPreCompileDebug UP-TO-DATE
+> Task :data:database:javaPreCompileDebug UP-TO-DATE
+> Task :data:wikipedia:javaPreCompileDebug UP-TO-DATE
+> Task :data:searchable:javaPreCompileDebug UP-TO-DATE
+> Task :data:customattrs:javaPreCompileDebug UP-TO-DATE
+> Task :libs:webdav:javaPreCompileDebug UP-TO-DATE
+> Task :libs:nextcloud:javaPreCompileDebug UP-TO-DATE
+> Task :core:shared:compileDebugKotlin UP-TO-DATE
+> Task :libs:owncloud:javaPreCompileDebug UP-TO-DATE
+> Task :data:files:javaPreCompileDebug UP-TO-DATE
+> Task :core:shared:compileDebugJavaWithJavac NO-SOURCE
+> Task :core:shared:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :libs:address-formatter:javaPreCompileDebug UP-TO-DATE
+> Task :data:locations:javaPreCompileDebug UP-TO-DATE
+> Task :data:notifications:javaPreCompileDebug UP-TO-DATE
+> Task :data:search-actions:javaPreCompileDebug UP-TO-DATE
+> Task :data:themes:javaPreCompileDebug UP-TO-DATE
+> Task :data:currencies:javaPreCompileDebug UP-TO-DATE
+> Task :data:unitconverter:javaPreCompileDebug UP-TO-DATE
+> Task :data:weather:javaPreCompileDebug UP-TO-DATE
+> Task :data:websites:javaPreCompileDebug UP-TO-DATE
+> Task :services:music:javaPreCompileDebug UP-TO-DATE
+> Task :data:widgets:javaPreCompileDebug UP-TO-DATE
+> Task :services:accounts:javaPreCompileDebug UP-TO-DATE
+> Task :services:backup:javaPreCompileDebug UP-TO-DATE
+> Task :services:badges:javaPreCompileDebug UP-TO-DATE
+> Task :services:favorites:javaPreCompileDebug UP-TO-DATE
+> Task :libs:address-formatter:compileDebugKotlin UP-TO-DATE
+> Task :libs:address-formatter:compileDebugJavaWithJavac UP-TO-DATE
+> Task :libs:address-formatter:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :services:feed:generateDebugBuildConfig UP-TO-DATE
+> Task :services:feed:compileDebugAidl UP-TO-DATE
+> Task :services:feed:javaPreCompileDebug UP-TO-DATE
+> Task :services:global-actions:javaPreCompileDebug UP-TO-DATE
+> Task :services:icons:generateDebugBuildConfig UP-TO-DATE
+> Task :services:icons:javaPreCompileDebug UP-TO-DATE
+> Task :services:plugins:javaPreCompileDebug UP-TO-DATE
+> Task :services:search:javaPreCompileDebug UP-TO-DATE
+> Task :services:tags:javaPreCompileDebug UP-TO-DATE
+> Task :services:widgets:javaPreCompileDebug UP-TO-DATE
+> Task :app:ui:javaPreCompileDebug FROM-CACHE
+> Task :data:i18n:javaPreCompileDebug FROM-CACHE
+> Task :data:plugins:javaPreCompileDebug FROM-CACHE
+> Task :app:app:generateDefaultDebugAssets UP-TO-DATE
+> Task :app:ui:generateDebugAssets UP-TO-DATE
+> Task :app:app:javaPreCompileDefaultDebug FROM-CACHE
+> Task :core:base:generateDebugAssets UP-TO-DATE
+> Task :libs:material-color-utilities:compileDebugKotlin UP-TO-DATE
+> Task :libs:material-color-utilities:compileDebugJavaWithJavac NO-SOURCE
+> Task :libs:material-color-utilities:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :core:compat:compileDebugKotlin UP-TO-DATE
+> Task :core:compat:compileDebugJavaWithJavac NO-SOURCE
+> Task :core:compat:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :core:compat:generateDebugAssets UP-TO-DATE
+> Task :core:base:compileDebugKotlin UP-TO-DATE
+> Task :core:base:compileDebugJavaWithJavac UP-TO-DATE
+> Task :core:base:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :core:crashreporter:compileDebugKotlin UP-TO-DATE
+> Task :core:crashreporter:compileDebugJavaWithJavac UP-TO-DATE
+> Task :core:crashreporter:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :core:permissions:compileDebugKotlin UP-TO-DATE
+> Task :core:permissions:compileDebugJavaWithJavac NO-SOURCE
+> Task :core:permissions:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :core:compat:mergeDebugAssets
+> Task :app:ui:mergeDebugAssets
+> Task :core:base:mergeDebugAssets
+> Task :libs:webdav:compileDebugKotlin UP-TO-DATE
+> Task :libs:webdav:compileDebugJavaWithJavac NO-SOURCE
+> Task :libs:webdav:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :data:notifications:compileDebugKotlin UP-TO-DATE
+> Task :app:app:generateDefaultDebugLocaleConfig
+> Task :libs:nextcloud:compileDebugKotlin UP-TO-DATE
+> Task :libs:nextcloud:compileDebugJavaWithJavac NO-SOURCE
+> Task :libs:nextcloud:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :libs:owncloud:compileDebugKotlin UP-TO-DATE
+> Task :data:notifications:compileDebugJavaWithJavac NO-SOURCE
+> Task :libs:owncloud:compileDebugJavaWithJavac NO-SOURCE
+> Task :data:notifications:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :libs:owncloud:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :services:accounts:compileDebugKotlin UP-TO-DATE
+> Task :services:backup:compileDebugKotlin UP-TO-DATE
+> Task :services:accounts:compileDebugJavaWithJavac NO-SOURCE
+> Task :services:backup:compileDebugJavaWithJavac NO-SOURCE
+> Task :services:backup:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :services:accounts:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :core:crashreporter:generateDebugAssets UP-TO-DATE
+> Task :data:plugins:generateDebugRFile
+> Task :core:devicepose:generateDebugAssets UP-TO-DATE
+> Task :core:crashreporter:mergeDebugAssets
+> Task :core:i18n:generateDebugAssets UP-TO-DATE
+> Task :core:devicepose:mergeDebugAssets
+> Task :core:ktx:generateDebugAssets UP-TO-DATE
+> Task :services:plugins:compileDebugKotlin UP-TO-DATE
+> Task :services:plugins:compileDebugJavaWithJavac NO-SOURCE
+> Task :services:plugins:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :core:permissions:generateDebugAssets UP-TO-DATE
+> Task :core:i18n:mergeDebugAssets
+> Task :core:preferences:generateDebugAssets UP-TO-DATE
+> Task :core:ktx:mergeDebugAssets
+> Task :core:profiles:generateDebugAssets UP-TO-DATE
+> Task :core:profiles:mergeDebugAssets
+> Task :core:preferences:mergeDebugAssets
+> Task :core:permissions:mergeDebugAssets
+> Task :core:shared:generateDebugAssets UP-TO-DATE
+> Task :data:applications:generateDebugAssets UP-TO-DATE
+> Task :data:appshortcuts:generateDebugAssets UP-TO-DATE
+> Task :data:appshortcuts:mergeDebugAssets
+> Task :data:applications:mergeDebugAssets
+> Task :data:calendar:generateDebugAssets UP-TO-DATE
+> Task :data:calculator:generateDebugAssets UP-TO-DATE
+> Task :core:profiles:compileDebugKotlin UP-TO-DATE
+> Task :core:shared:mergeDebugAssets
+> Task :data:contacts:generateDebugAssets UP-TO-DATE
+> Task :data:calendar:mergeDebugAssets
+> Task :data:currencies:generateDebugAssets UP-TO-DATE
+> Task :core:profiles:compileDebugJavaWithJavac NO-SOURCE
+> Task :core:profiles:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :data:calculator:mergeDebugAssets
+> Task :data:customattrs:generateDebugAssets UP-TO-DATE
+> Task :data:currencies:mergeDebugAssets
+> Task :data:database:generateDebugAssets UP-TO-DATE
+> Task :data:customattrs:mergeDebugAssets
+> Task :data:contacts:mergeDebugAssets
+> Task :data:i18n:generateDebugAssets UP-TO-DATE
+> Task :data:files:generateDebugAssets UP-TO-DATE
+> Task :data:files:mergeDebugAssets
+> Task :data:database:mergeDebugAssets
+> Task :data:locations:generateDebugAssets UP-TO-DATE
+> Task :data:notifications:generateDebugAssets UP-TO-DATE
+> Task :data:i18n:mergeDebugAssets
+> Task :data:locations:mergeDebugAssets
+> Task :data:plugins:generateDebugAssets UP-TO-DATE
+> Task :data:search-actions:generateDebugAssets UP-TO-DATE
+> Task :data:notifications:mergeDebugAssets
+> Task :data:searchable:generateDebugAssets UP-TO-DATE
+> Task :data:plugins:mergeDebugAssets
+> Task :data:themes:generateDebugAssets UP-TO-DATE
+> Task :data:search-actions:mergeDebugAssets
+> Task :data:searchable:mergeDebugAssets
+> Task :data:unitconverter:generateDebugAssets UP-TO-DATE
+> Task :data:weather:generateDebugAssets UP-TO-DATE
+> Task :data:applications:compileDebugKotlin UP-TO-DATE
+> Task :data:weather:mergeDebugAssets
+> Task :data:websites:generateDebugAssets UP-TO-DATE
+> Task :data:themes:mergeDebugAssets
+> Task :data:widgets:generateDebugAssets UP-TO-DATE
+> Task :data:websites:mergeDebugAssets
+> Task :data:wikipedia:generateDebugAssets UP-TO-DATE
+> Task :data:unitconverter:mergeDebugAssets
+> Task :libs:address-formatter:generateDebugAssets UP-TO-DATE
+> Task :data:applications:compileDebugJavaWithJavac NO-SOURCE
+> Task :data:applications:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :libs:material-color-utilities:generateDebugAssets UP-TO-DATE
+> Task :core:preferences:compileDebugKotlin UP-TO-DATE
+> Task :data:widgets:mergeDebugAssets
+> Task :libs:address-formatter:mergeDebugAssets
+> Task :libs:nextcloud:generateDebugAssets UP-TO-DATE
+> Task :libs:owncloud:generateDebugAssets UP-TO-DATE
+> Task :data:wikipedia:mergeDebugAssets
+> Task :libs:webdav:generateDebugAssets UP-TO-DATE
+> Task :core:preferences:compileDebugJavaWithJavac NO-SOURCE
+> Task :core:preferences:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :libs:webdav:mergeDebugAssets
+> Task :libs:nextcloud:mergeDebugAssets
+> Task :libs:material-color-utilities:mergeDebugAssets
+> Task :app:app:processDefaultDebugNavigationResources
+> Task :data:calendar:compileDebugKotlin UP-TO-DATE
+> Task :data:calendar:compileDebugJavaWithJavac NO-SOURCE
+> Task :data:calendar:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :data:calculator:compileDebugKotlin UP-TO-DATE
+> Task :data:calculator:compileDebugJavaWithJavac NO-SOURCE
+> Task :data:calculator:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :data:appshortcuts:compileDebugKotlin UP-TO-DATE
+> Task :data:appshortcuts:compileDebugJavaWithJavac NO-SOURCE
+> Task :data:appshortcuts:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :data:database:kspDebugKotlin UP-TO-DATE
+> Task :data:contacts:compileDebugKotlin UP-TO-DATE
+> Task :data:contacts:compileDebugJavaWithJavac NO-SOURCE
+> Task :data:contacts:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :data:wikipedia:compileDebugKotlin UP-TO-DATE
+> Task :data:wikipedia:compileDebugJavaWithJavac NO-SOURCE
+> Task :data:wikipedia:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :data:files:compileDebugKotlin UP-TO-DATE
+> Task :data:files:compileDebugJavaWithJavac NO-SOURCE
+> Task :data:files:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :services:music:compileDebugKotlin UP-TO-DATE
+> Task :services:music:compileDebugJavaWithJavac NO-SOURCE
+> Task :services:music:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :data:websites:compileDebugKotlin UP-TO-DATE
+> Task :services:feed:compileDebugKotlin UP-TO-DATE
+> Task :data:websites:compileDebugJavaWithJavac NO-SOURCE
+> Task :data:websites:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :services:accounts:generateDebugAssets UP-TO-DATE
+> Task :services:feed:compileDebugJavaWithJavac UP-TO-DATE
+> Task :services:feed:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :services:backup:generateDebugAssets UP-TO-DATE
+> Task :services:backup:mergeDebugAssets
+> Task :services:badges:generateDebugAssets UP-TO-DATE
+> Task :libs:owncloud:mergeDebugAssets
+> Task :services:favorites:generateDebugAssets UP-TO-DATE
+> Task :services:accounts:mergeDebugAssets
+> Task :services:feed:generateDebugAssets UP-TO-DATE
+> Task :services:global-actions:compileDebugKotlin UP-TO-DATE
+> Task :services:global-actions:compileDebugJavaWithJavac NO-SOURCE
+> Task :services:global-actions:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :services:global-actions:generateDebugAssets UP-TO-DATE
+> Task :services:favorites:mergeDebugAssets
+> Task :services:badges:mergeDebugAssets
+> Task :services:icons:generateDebugAssets UP-TO-DATE
+> Task :services:music:generateDebugAssets UP-TO-DATE
+> Task :services:global-actions:mergeDebugAssets
+> Task :services:plugins:generateDebugAssets UP-TO-DATE
+> Task :services:music:mergeDebugAssets
+> Task :services:search:generateDebugAssets UP-TO-DATE
+> Task :services:icons:mergeDebugAssets
+> Task :services:tags:generateDebugAssets UP-TO-DATE
+> Task :services:tags:mergeDebugAssets
+> Task :services:plugins:mergeDebugAssets
+> Task :services:widgets:generateDebugAssets UP-TO-DATE
+> Task :services:widgets:mergeDebugAssets
+> Task :data:locations:compileDebugKotlin UP-TO-DATE
+> Task :data:locations:compileDebugJavaWithJavac NO-SOURCE
+> Task :data:locations:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :services:search:mergeDebugAssets
+> Task :services:feed:mergeDebugAssets
+> Task :data:database:compileDebugKotlin UP-TO-DATE
+> Task :data:database:compileDebugJavaWithJavac NO-SOURCE
+> Task :data:database:copyRoomSchemas NO-SOURCE
+> Task :data:database:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :core:base:processDebugJavaRes
+> Task :app:app:packageDefaultDebugResources
+> Task :core:compat:processDebugJavaRes
+> Task :data:search-actions:compileDebugKotlin UP-TO-DATE
+> Task :data:search-actions:compileDebugJavaWithJavac NO-SOURCE
+> Task :data:search-actions:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :data:currencies:compileDebugKotlin UP-TO-DATE
+> Task :data:currencies:compileDebugJavaWithJavac NO-SOURCE
+> Task :data:currencies:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :data:unitconverter:compileDebugKotlin UP-TO-DATE
+> Task :data:unitconverter:compileDebugJavaWithJavac NO-SOURCE
+> Task :data:unitconverter:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :data:searchable:compileDebugKotlin UP-TO-DATE
+> Task :data:searchable:compileDebugJavaWithJavac NO-SOURCE
+> Task :data:searchable:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :data:themes:compileDebugKotlin UP-TO-DATE
+> Task :data:themes:compileDebugJavaWithJavac NO-SOURCE
+> Task :core:crashreporter:processDebugJavaRes
+> Task :data:themes:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :data:weather:compileDebugKotlin UP-TO-DATE
+> Task :data:weather:compileDebugJavaWithJavac NO-SOURCE
+> Task :data:weather:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :services:favorites:compileDebugKotlin UP-TO-DATE
+> Task :data:customattrs:compileDebugKotlin UP-TO-DATE
+> Task :data:customattrs:compileDebugJavaWithJavac NO-SOURCE
+> Task :data:customattrs:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :services:badges:compileDebugKotlin UP-TO-DATE
+> Task :services:favorites:compileDebugJavaWithJavac NO-SOURCE
+> Task :services:badges:compileDebugJavaWithJavac NO-SOURCE
+> Task :services:badges:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :data:widgets:compileDebugKotlin UP-TO-DATE
+> Task :data:widgets:compileDebugJavaWithJavac NO-SOURCE
+> Task :data:widgets:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :services:favorites:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :services:tags:compileDebugKotlin UP-TO-DATE
+> Task :services:tags:compileDebugJavaWithJavac NO-SOURCE
+> Task :services:tags:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :services:search:compileDebugKotlin UP-TO-DATE
+> Task :services:search:compileDebugJavaWithJavac NO-SOURCE
+> Task :services:search:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :core:devicepose:processDebugJavaRes
+> Task :core:i18n:processDebugJavaRes NO-SOURCE
+> Task :services:icons:compileDebugKotlin UP-TO-DATE
+> Task :services:widgets:compileDebugKotlin UP-TO-DATE
+> Task :services:widgets:compileDebugJavaWithJavac NO-SOURCE
+> Task :services:icons:compileDebugJavaWithJavac UP-TO-DATE
+> Task :services:icons:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :services:widgets:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :core:ktx:processDebugJavaRes
+> Task :core:permissions:processDebugJavaRes
+> Task :core:profiles:processDebugJavaRes
+> Task :core:preferences:processDebugJavaRes
+> Task :data:applications:processDebugJavaRes
+> Task :core:shared:processDebugJavaRes
+> Task :data:appshortcuts:processDebugJavaRes
+> Task :data:calculator:processDebugJavaRes
+> Task :data:calendar:processDebugJavaRes
+> Task :data:contacts:processDebugJavaRes
+> Task :data:currencies:processDebugJavaRes
+> Task :data:customattrs:processDebugJavaRes
+> Task :data:database:processDebugJavaRes
+> Task :data:files:processDebugJavaRes
+> Task :data:locations:processDebugJavaRes
+> Task :data:plugins:compileDebugKotlin
+> Task :data:notifications:processDebugJavaRes
+> Task :data:plugins:compileDebugJavaWithJavac NO-SOURCE
+> Task :app:app:parseDefaultDebugLocalResources
+> Task :data:search-actions:processDebugJavaRes
+> Task :data:plugins:processDebugJavaRes
+> Task :data:searchable:processDebugJavaRes
+> Task :data:plugins:bundleLibCompileToJarDebug
+> Task :data:unitconverter:processDebugJavaRes
+> Task :data:websites:processDebugJavaRes
+> Task :data:themes:processDebugJavaRes
+> Task :data:wikipedia:processDebugJavaRes
+> Task :libs:material-color-utilities:processDebugJavaRes
+> Task :libs:nextcloud:processDebugJavaRes
+> Task :libs:owncloud:processDebugJavaRes
+> Task :libs:webdav:processDebugJavaRes
+> Task :data:weather:processDebugJavaRes
+> Task :data:widgets:processDebugJavaRes
+> Task :services:accounts:processDebugJavaRes
+> Task :services:favorites:processDebugJavaRes
+> Task :libs:address-formatter:processDebugJavaRes
+> Task :services:feed:processDebugJavaRes
+> Task :services:icons:processDebugJavaRes
+> Task :services:badges:processDebugJavaRes
+> Task :services:backup:processDebugJavaRes
+> Task :services:music:processDebugJavaRes
+> Task :services:tags:processDebugJavaRes
+> Task :services:widgets:processDebugJavaRes
+> Task :services:global-actions:processDebugJavaRes
+> Task :services:plugins:processDebugJavaRes
+> Task :app:ui:compileDebugKotlin UP-TO-DATE
+> Task :services:search:processDebugJavaRes
+> Task :app:app:desugarDefaultDebugFileDependencies
+> Task :services:accounts:bundleLibRuntimeToDirDebug
+> Task :app:ui:processDebugJavaRes
+> Task :services:badges:bundleLibRuntimeToDirDebug
+> Task :app:app:generateDefaultDebugGlobalSynthetics
+> Task :app:app:mergeDefaultDebugAssets
+> Task :data:applications:bundleLibRuntimeToDirDebug
+> Task :app:app:compressDefaultDebugAssets
+> Task :data:i18n:generateDebugRFile
+> Task :app:app:checkDefaultDebugDuplicateClasses
+> Task :services:backup:bundleLibRuntimeToDirDebug
+> Task :app:app:generateDefaultDebugRFile
+> Task :data:appshortcuts:bundleLibRuntimeToDirDebug
+> Task :services:icons:bundleLibRuntimeToDirDebug
+> Task :app:ui:compileDebugJavaWithJavac
+> Task :services:favorites:bundleLibRuntimeToDirDebug
+> Task :data:i18n:compileDebugKotlin
+> Task :data:i18n:compileDebugJavaWithJavac NO-SOURCE
+> Task :data:i18n:bundleLibCompileToJarDebug
+> Task :data:i18n:processDebugJavaRes
+> Task :data:searchable:bundleLibRuntimeToDirDebug
+> Task :app:app:mergeExtDexDefaultDebug
+> Task :services:search:bundleLibRuntimeToDirDebug
+> Task :data:calculator:bundleLibRuntimeToDirDebug
+> Task :services:tags:bundleLibRuntimeToDirDebug
+> Task :data:customattrs:bundleLibRuntimeToDirDebug
+> Task :services:widgets:bundleLibRuntimeToDirDebug
+> Task :data:widgets:bundleLibRuntimeToDirDebug
+> Task :app:ui:bundleLibCompileToJarDebug
+> Task :app:app:compileDefaultDebugKotlin
+> Task :app:ui:bundleLibRuntimeToDirDebug
+> Task :data:contacts:bundleLibRuntimeToDirDebug
+> Task :data:unitconverter:bundleLibRuntimeToDirDebug
+> Task :data:currencies:bundleLibRuntimeToDirDebug
+> Task :data:i18n:bundleLibRuntimeToDirDebug
+> Task :data:plugins:bundleLibRuntimeToDirDebug
+> Task :data:calendar:bundleLibRuntimeToDirDebug
+> Task :data:files:bundleLibRuntimeToDirDebug
+> Task :data:themes:bundleLibRuntimeToDirDebug
+> Task :services:music:bundleLibRuntimeToDirDebug
+> Task :libs:owncloud:bundleLibRuntimeToDirDebug
+> Task :data:notifications:bundleLibRuntimeToDirDebug
+> Task :libs:nextcloud:bundleLibRuntimeToDirDebug
+> Task :app:app:processDefaultDebugJavaRes
+> Task :services:global-actions:bundleLibRuntimeToDirDebug
+> Task :core:profiles:bundleLibRuntimeToDirDebug
+> Task :data:search-actions:bundleLibRuntimeToDirDebug
+> Task :app:app:compileDefaultDebugJavaWithJavac
+> Task :core:permissions:bundleLibRuntimeToDirDebug
+> Task :services:plugins:bundleLibRuntimeToDirDebug
+> Task :data:locations:bundleLibRuntimeToDirDebug
+> Task :data:websites:bundleLibRuntimeToDirDebug
+> Task :data:weather:bundleLibRuntimeToDirDebug
+> Task :data:wikipedia:bundleLibRuntimeToDirDebug
+> Task :services:feed:bundleLibRuntimeToDirDebug
+> Task :libs:webdav:bundleLibRuntimeToDirDebug
+> Task :core:crashreporter:bundleLibRuntimeToDirDebug
+> Task :core:i18n:bundleLibRuntimeToDirDebug
+> Task :data:database:bundleLibRuntimeToDirDebug
+> Task :core:base:bundleLibRuntimeToDirDebug
+> Task :core:devicepose:bundleLibRuntimeToDirDebug
+> Task :core:compat:bundleLibRuntimeToDirDebug
+> Task :core:ktx:bundleLibRuntimeToDirDebug
+> Task :libs:address-formatter:bundleLibRuntimeToDirDebug
+> Task :app:ui:writeDebugAarMetadata
+> Task :core:preferences:bundleLibRuntimeToDirDebug
+> Task :core:base:writeDebugAarMetadata
+> Task :core:compat:writeDebugAarMetadata
+> Task :core:crashreporter:writeDebugAarMetadata
+> Task :core:devicepose:writeDebugAarMetadata
+> Task :core:i18n:writeDebugAarMetadata
+> Task :core:ktx:writeDebugAarMetadata
+> Task :core:permissions:writeDebugAarMetadata
+> Task :core:preferences:writeDebugAarMetadata
+> Task :core:profiles:writeDebugAarMetadata
+> Task :core:shared:writeDebugAarMetadata
+> Task :data:applications:writeDebugAarMetadata
+> Task :data:appshortcuts:writeDebugAarMetadata
+> Task :data:calculator:writeDebugAarMetadata
+> Task :data:calendar:writeDebugAarMetadata
+> Task :data:contacts:writeDebugAarMetadata
+> Task :data:currencies:writeDebugAarMetadata
+> Task :data:customattrs:writeDebugAarMetadata
+> Task :data:database:writeDebugAarMetadata
+> Task :data:files:writeDebugAarMetadata
+> Task :data:i18n:writeDebugAarMetadata
+> Task :data:locations:writeDebugAarMetadata
+> Task :data:notifications:writeDebugAarMetadata
+> Task :data:plugins:writeDebugAarMetadata
+> Task :data:search-actions:writeDebugAarMetadata
+> Task :data:searchable:writeDebugAarMetadata
+> Task :data:themes:writeDebugAarMetadata
+> Task :libs:material-color-utilities:bundleLibRuntimeToDirDebug
+> Task :data:unitconverter:writeDebugAarMetadata
+> Task :data:weather:writeDebugAarMetadata
+> Task :data:websites:writeDebugAarMetadata
+> Task :data:widgets:writeDebugAarMetadata
+> Task :data:wikipedia:writeDebugAarMetadata
+> Task :libs:address-formatter:writeDebugAarMetadata
+> Task :libs:material-color-utilities:writeDebugAarMetadata
+> Task :libs:nextcloud:writeDebugAarMetadata
+> Task :libs:owncloud:writeDebugAarMetadata
+> Task :libs:webdav:writeDebugAarMetadata
+> Task :services:accounts:writeDebugAarMetadata
+> Task :services:backup:writeDebugAarMetadata
+> Task :services:badges:writeDebugAarMetadata
+> Task :services:favorites:writeDebugAarMetadata
+> Task :services:feed:writeDebugAarMetadata
+> Task :services:global-actions:writeDebugAarMetadata
+> Task :services:icons:writeDebugAarMetadata
+> Task :services:music:writeDebugAarMetadata
+> Task :services:plugins:writeDebugAarMetadata
+> Task :services:search:writeDebugAarMetadata
+> Task :services:tags:writeDebugAarMetadata
+> Task :services:widgets:writeDebugAarMetadata
+> Task :core:shared:bundleLibRuntimeToDirDebug
+> Task :app:app:mergeDefaultDebugJavaResource
+> Task :app:app:compileDefaultDebugNavigationResources
+> Task :app:app:checkDefaultDebugAarMetadata
+> Task :app:app:extractDeepLinksDefaultDebug
+> Task :app:ui:extractDeepLinksDebug
+> Task :app:app:createDefaultDebugCompatibleScreenManifests
+> Task :core:base:extractDeepLinksDebug FROM-CACHE
+> Task :app:ui:processDebugManifest
+> Task :core:compat:extractDeepLinksDebug FROM-CACHE
+> Task :core:compat:processDebugManifest
+> Task :core:crashreporter:extractDeepLinksDebug FROM-CACHE
+> Task :core:base:processDebugManifest
+> Task :core:devicepose:extractDeepLinksDebug FROM-CACHE
+> Task :core:crashreporter:processDebugManifest
+> Task :core:i18n:extractDeepLinksDebug FROM-CACHE
+> Task :core:i18n:processDebugManifest
+> Task :core:ktx:extractDeepLinksDebug FROM-CACHE
+> Task :core:ktx:processDebugManifest
+> Task :core:permissions:extractDeepLinksDebug FROM-CACHE
+> Task :core:permissions:processDebugManifest
+> Task :core:preferences:extractDeepLinksDebug FROM-CACHE
+> Task :core:devicepose:processDebugManifest
+> Task :core:profiles:extractDeepLinksDebug FROM-CACHE
+> Task :core:preferences:processDebugManifest
+> Task :core:shared:extractDeepLinksDebug FROM-CACHE
+> Task :core:shared:processDebugManifest
+> Task :data:applications:extractDeepLinksDebug FROM-CACHE
+> Task :core:profiles:processDebugManifest
+> Task :data:appshortcuts:extractDeepLinksDebug FROM-CACHE
+> Task :data:applications:processDebugManifest
+> Task :data:calculator:extractDeepLinksDebug FROM-CACHE
+> Task :data:calculator:processDebugManifest
+> Task :data:calendar:extractDeepLinksDebug FROM-CACHE
+> Task :data:calendar:processDebugManifest
+> Task :data:contacts:extractDeepLinksDebug FROM-CACHE
+> Task :data:appshortcuts:processDebugManifest
+> Task :data:currencies:extractDeepLinksDebug FROM-CACHE
+> Task :data:contacts:processDebugManifest
+> Task :data:customattrs:extractDeepLinksDebug FROM-CACHE
+> Task :data:customattrs:processDebugManifest
+> Task :data:database:extractDeepLinksDebug FROM-CACHE
+> Task :data:database:processDebugManifest
+> Task :data:files:extractDeepLinksDebug FROM-CACHE
+> Task :data:files:processDebugManifest
+> Task :data:i18n:extractDeepLinksDebug FROM-CACHE
+> Task :data:currencies:processDebugManifest
+> Task :data:locations:extractDeepLinksDebug FROM-CACHE
+> Task :data:i18n:processDebugManifest
+> Task :data:notifications:extractDeepLinksDebug FROM-CACHE
+> Task :data:locations:processDebugManifest
+> Task :data:plugins:extractDeepLinksDebug FROM-CACHE
+> Task :data:notifications:processDebugManifest
+> Task :data:search-actions:extractDeepLinksDebug FROM-CACHE
+> Task :data:search-actions:processDebugManifest
+> Task :data:searchable:extractDeepLinksDebug FROM-CACHE
+> Task :data:plugins:processDebugManifest
+> Task :data:searchable:processDebugManifest
+> Task :data:themes:extractDeepLinksDebug FROM-CACHE
+> Task :data:unitconverter:extractDeepLinksDebug FROM-CACHE
+> Task :data:themes:processDebugManifest
+> Task :data:weather:extractDeepLinksDebug FROM-CACHE
+> Task :data:weather:processDebugManifest
+> Task :data:websites:extractDeepLinksDebug FROM-CACHE
+> Task :data:unitconverter:processDebugManifest
+> Task :data:widgets:extractDeepLinksDebug FROM-CACHE
+> Task :data:websites:processDebugManifest
+> Task :data:wikipedia:extractDeepLinksDebug FROM-CACHE
+> Task :data:wikipedia:processDebugManifest
+> Task :libs:address-formatter:extractDeepLinksDebug FROM-CACHE
+> Task :libs:address-formatter:processDebugManifest
+> Task :libs:material-color-utilities:extractDeepLinksDebug FROM-CACHE
+> Task :libs:material-color-utilities:processDebugManifest
+> Task :data:widgets:processDebugManifest
+> Task :libs:nextcloud:extractDeepLinksDebug FROM-CACHE
+> Task :libs:owncloud:extractDeepLinksDebug FROM-CACHE
+> Task :libs:nextcloud:processDebugManifest
+> Task :libs:webdav:extractDeepLinksDebug FROM-CACHE
+> Task :libs:owncloud:processDebugManifest
+> Task :services:accounts:extractDeepLinksDebug FROM-CACHE
+> Task :services:accounts:processDebugManifest
+> Task :libs:webdav:processDebugManifest
+> Task :services:backup:extractDeepLinksDebug FROM-CACHE
+> Task :services:badges:extractDeepLinksDebug FROM-CACHE
+> Task :services:backup:processDebugManifest
+> Task :services:favorites:extractDeepLinksDebug FROM-CACHE
+> Task :services:favorites:processDebugManifest
+> Task :services:feed:extractDeepLinksDebug FROM-CACHE
+> Task :services:feed:processDebugManifest
+> Task :services:global-actions:extractDeepLinksDebug FROM-CACHE
+> Task :services:global-actions:processDebugManifest
+> Task :services:icons:extractDeepLinksDebug FROM-CACHE
+> Task :services:badges:processDebugManifest
+> Task :services:music:extractDeepLinksDebug FROM-CACHE
+> Task :services:music:processDebugManifest
+> Task :services:plugins:extractDeepLinksDebug FROM-CACHE
+> Task :services:icons:processDebugManifest
+> Task :services:search:extractDeepLinksDebug FROM-CACHE
+> Task :services:plugins:processDebugManifest
+> Task :services:tags:extractDeepLinksDebug FROM-CACHE
+> Task :services:widgets:extractDeepLinksDebug FROM-CACHE
+> Task :services:tags:processDebugManifest
+> Task :app:ui:mapDebugSourceSetPaths
+> Task :services:search:processDebugManifest
+> Task :core:base:mapDebugSourceSetPaths
+> Task :services:widgets:processDebugManifest
+> Task :app:ui:compileDebugLibraryResources
+> Task :core:compat:mapDebugSourceSetPaths
+> Task :core:compat:compileDebugLibraryResources
+> Task :core:crashreporter:mapDebugSourceSetPaths
+> Task :core:devicepose:mapDebugSourceSetPaths
+> Task :core:devicepose:compileDebugLibraryResources FROM-CACHE
+> Task :core:i18n:mapDebugSourceSetPaths
+> Task :core:crashreporter:compileDebugLibraryResources
+> Task :core:ktx:mapDebugSourceSetPaths
+> Task :core:ktx:compileDebugLibraryResources FROM-CACHE
+> Task :core:permissions:mapDebugSourceSetPaths
+> Task :core:permissions:compileDebugLibraryResources FROM-CACHE
+> Task :core:preferences:mapDebugSourceSetPaths
+> Task :core:preferences:compileDebugLibraryResources FROM-CACHE
+> Task :core:profiles:mapDebugSourceSetPaths
+> Task :core:profiles:compileDebugLibraryResources FROM-CACHE
+> Task :core:shared:mapDebugSourceSetPaths
+> Task :core:shared:compileDebugLibraryResources FROM-CACHE
+> Task :data:applications:mapDebugSourceSetPaths
+> Task :data:applications:compileDebugLibraryResources FROM-CACHE
+> Task :data:appshortcuts:mapDebugSourceSetPaths
+> Task :data:calculator:mapDebugSourceSetPaths
+> Task :data:calculator:compileDebugLibraryResources FROM-CACHE
+> Task :data:calendar:mapDebugSourceSetPaths
+> Task :data:appshortcuts:compileDebugLibraryResources FROM-CACHE
+> Task :data:calendar:compileDebugLibraryResources FROM-CACHE
+> Task :data:contacts:mapDebugSourceSetPaths
+> Task :data:currencies:mapDebugSourceSetPaths
+> Task :data:currencies:compileDebugLibraryResources FROM-CACHE
+> Task :data:contacts:compileDebugLibraryResources FROM-CACHE
+> Task :data:customattrs:mapDebugSourceSetPaths
+> Task :data:database:mapDebugSourceSetPaths
+> Task :data:customattrs:compileDebugLibraryResources FROM-CACHE
+> Task :data:files:mapDebugSourceSetPaths
+> Task :data:files:compileDebugLibraryResources FROM-CACHE
+> Task :data:i18n:mapDebugSourceSetPaths
+> Task :data:database:compileDebugLibraryResources FROM-CACHE
+> Task :data:i18n:compileDebugLibraryResources FROM-CACHE
+> Task :data:notifications:mapDebugSourceSetPaths
+> Task :data:locations:mapDebugSourceSetPaths
+> Task :data:notifications:compileDebugLibraryResources FROM-CACHE
+> Task :data:plugins:mapDebugSourceSetPaths
+> Task :data:locations:compileDebugLibraryResources FROM-CACHE
+> Task :data:plugins:compileDebugLibraryResources FROM-CACHE
+> Task :data:search-actions:mapDebugSourceSetPaths
+> Task :data:searchable:mapDebugSourceSetPaths
+> Task :data:search-actions:compileDebugLibraryResources FROM-CACHE
+> Task :data:searchable:compileDebugLibraryResources FROM-CACHE
+> Task :data:themes:mapDebugSourceSetPaths
+> Task :data:unitconverter:mapDebugSourceSetPaths
+> Task :data:unitconverter:compileDebugLibraryResources FROM-CACHE
+> Task :data:weather:mapDebugSourceSetPaths
+> Task :data:themes:compileDebugLibraryResources FROM-CACHE
+> Task :data:weather:compileDebugLibraryResources FROM-CACHE
+> Task :core:i18n:compileDebugLibraryResources
+> Task :data:widgets:mapDebugSourceSetPaths
+> Task :data:wikipedia:mapDebugSourceSetPaths
+> Task :data:websites:mapDebugSourceSetPaths
+> Task :data:widgets:compileDebugLibraryResources FROM-CACHE
+> Task :libs:address-formatter:mapDebugSourceSetPaths
+> Task :libs:address-formatter:compileDebugLibraryResources FROM-CACHE
+> Task :libs:material-color-utilities:mapDebugSourceSetPaths
+> Task :libs:material-color-utilities:compileDebugLibraryResources FROM-CACHE
+> Task :libs:nextcloud:mapDebugSourceSetPaths
+> Task :data:websites:compileDebugLibraryResources
+> Task :libs:owncloud:mapDebugSourceSetPaths
+> Task :libs:owncloud:compileDebugLibraryResources
+> Task :libs:nextcloud:compileDebugLibraryResources
+> Task :libs:webdav:mapDebugSourceSetPaths
+> Task :services:accounts:mapDebugSourceSetPaths
+> Task :services:accounts:compileDebugLibraryResources FROM-CACHE
+> Task :services:backup:mapDebugSourceSetPaths
+> Task :libs:webdav:compileDebugLibraryResources FROM-CACHE
+> Task :services:backup:compileDebugLibraryResources FROM-CACHE
+> Task :services:badges:mapDebugSourceSetPaths
+> Task :services:favorites:mapDebugSourceSetPaths
+> Task :services:badges:compileDebugLibraryResources FROM-CACHE
+> Task :services:favorites:compileDebugLibraryResources FROM-CACHE
+> Task :data:wikipedia:compileDebugLibraryResources
+> Task :services:global-actions:mapDebugSourceSetPaths
+> Task :services:icons:mapDebugSourceSetPaths
+> Task :services:global-actions:compileDebugLibraryResources
+> Task :services:music:mapDebugSourceSetPaths
+> Task :services:icons:compileDebugLibraryResources FROM-CACHE
+> Task :services:plugins:mapDebugSourceSetPaths
+> Task :services:plugins:compileDebugLibraryResources FROM-CACHE
+> Task :services:music:compileDebugLibraryResources
+> Task :services:search:mapDebugSourceSetPaths
+> Task :services:tags:mapDebugSourceSetPaths
+> Task :services:search:compileDebugLibraryResources FROM-CACHE
+> Task :services:tags:compileDebugLibraryResources FROM-CACHE
+> Task :services:feed:mapDebugSourceSetPaths
+> Task :services:widgets:mapDebugSourceSetPaths
+> Task :app:app:mergeDefaultDebugJniLibFolders
+> Task :app:ui:mergeDebugJniLibFolders
+> Task :services:widgets:compileDebugLibraryResources FROM-CACHE
+> Task :app:ui:mergeDebugNativeLibs NO-SOURCE
+> Task :services:feed:compileDebugLibraryResources FROM-CACHE
+> Task :core:base:mergeDebugJniLibFolders
+> Task :core:compat:mergeDebugJniLibFolders
+> Task :core:compat:mergeDebugNativeLibs NO-SOURCE
+> Task :core:base:mergeDebugNativeLibs NO-SOURCE
+> Task :app:ui:copyDebugJniLibsProjectOnly
+> Task :core:base:copyDebugJniLibsProjectOnly
+> Task :core:compat:copyDebugJniLibsProjectOnly
+> Task :core:crashreporter:mergeDebugJniLibFolders
+> Task :core:crashreporter:mergeDebugNativeLibs NO-SOURCE
+> Task :core:i18n:mergeDebugJniLibFolders
+> Task :core:i18n:mergeDebugNativeLibs NO-SOURCE
+> Task :core:devicepose:mergeDebugJniLibFolders
+> Task :core:devicepose:mergeDebugNativeLibs NO-SOURCE
+> Task :core:devicepose:copyDebugJniLibsProjectOnly
+> Task :core:i18n:copyDebugJniLibsProjectOnly
+> Task :core:crashreporter:copyDebugJniLibsProjectOnly
+> Task :core:ktx:mergeDebugJniLibFolders
+> Task :core:ktx:mergeDebugNativeLibs NO-SOURCE
+> Task :core:permissions:mergeDebugJniLibFolders
+> Task :core:ktx:copyDebugJniLibsProjectOnly
+> Task :core:preferences:mergeDebugJniLibFolders
+> Task :core:preferences:mergeDebugNativeLibs NO-SOURCE
+> Task :core:preferences:copyDebugJniLibsProjectOnly
+> Task :core:permissions:mergeDebugNativeLibs NO-SOURCE
+> Task :core:permissions:copyDebugJniLibsProjectOnly
+> Task :app:app:processDefaultDebugMainManifest
+> Task :core:profiles:mergeDebugJniLibFolders
+> Task :core:profiles:mergeDebugNativeLibs NO-SOURCE
+> Task :core:profiles:copyDebugJniLibsProjectOnly
+> Task :core:shared:mergeDebugJniLibFolders
+> Task :data:applications:mergeDebugJniLibFolders
+> Task :core:shared:mergeDebugNativeLibs NO-SOURCE
+> Task :data:applications:mergeDebugNativeLibs NO-SOURCE
+> Task :core:shared:copyDebugJniLibsProjectOnly
+> Task :data:applications:copyDebugJniLibsProjectOnly
+> Task :data:appshortcuts:mergeDebugJniLibFolders
+> Task :data:calculator:mergeDebugJniLibFolders
+> Task :data:appshortcuts:mergeDebugNativeLibs NO-SOURCE
+> Task :data:calculator:mergeDebugNativeLibs NO-SOURCE
+> Task :data:appshortcuts:copyDebugJniLibsProjectOnly
+> Task :data:calculator:copyDebugJniLibsProjectOnly
+> Task :data:currencies:mergeDebugJniLibFolders
+> Task :data:contacts:mergeDebugJniLibFolders
+> Task :data:currencies:mergeDebugNativeLibs NO-SOURCE
+> Task :data:contacts:mergeDebugNativeLibs NO-SOURCE
+> Task :data:currencies:copyDebugJniLibsProjectOnly
+> Task :data:contacts:copyDebugJniLibsProjectOnly
+> Task :data:calendar:mergeDebugJniLibFolders
+> Task :data:database:mergeDebugJniLibFolders
+> Task :data:calendar:mergeDebugNativeLibs NO-SOURCE
+> Task :data:database:mergeDebugNativeLibs NO-SOURCE
+> Task :data:calendar:copyDebugJniLibsProjectOnly
+> Task :data:database:copyDebugJniLibsProjectOnly
+> Task :data:customattrs:mergeDebugJniLibFolders
+> Task :data:customattrs:mergeDebugNativeLibs NO-SOURCE
+> Task :data:i18n:mergeDebugJniLibFolders
+> Task :data:i18n:mergeDebugNativeLibs NO-SOURCE
+> Task :data:customattrs:copyDebugJniLibsProjectOnly
+> Task :data:i18n:copyDebugJniLibsProjectOnly
+> Task :data:files:mergeDebugJniLibFolders
+> Task :data:locations:mergeDebugJniLibFolders
+> Task :data:files:mergeDebugNativeLibs NO-SOURCE
+> Task :data:locations:mergeDebugNativeLibs NO-SOURCE
+> Task :data:notifications:mergeDebugJniLibFolders
+> Task :data:files:copyDebugJniLibsProjectOnly
+> Task :data:locations:copyDebugJniLibsProjectOnly
+> Task :data:notifications:mergeDebugNativeLibs NO-SOURCE
+> Task :data:notifications:copyDebugJniLibsProjectOnly
+> Task :data:plugins:mergeDebugJniLibFolders
+> Task :data:plugins:mergeDebugNativeLibs NO-SOURCE
+> Task :data:search-actions:mergeDebugJniLibFolders
+> Task :data:search-actions:mergeDebugNativeLibs NO-SOURCE
+> Task :data:searchable:mergeDebugJniLibFolders
+> Task :data:searchable:mergeDebugNativeLibs NO-SOURCE
+> Task :data:search-actions:copyDebugJniLibsProjectOnly
+> Task :data:searchable:copyDebugJniLibsProjectOnly
+> Task :data:plugins:copyDebugJniLibsProjectOnly
+> Task :data:weather:mergeDebugJniLibFolders
+> Task :data:weather:mergeDebugNativeLibs NO-SOURCE
+> Task :data:themes:mergeDebugJniLibFolders
+> Task :data:unitconverter:mergeDebugJniLibFolders
+> Task :data:themes:mergeDebugNativeLibs NO-SOURCE
+> Task :data:unitconverter:mergeDebugNativeLibs NO-SOURCE
+> Task :data:themes:copyDebugJniLibsProjectOnly
+> Task :data:unitconverter:copyDebugJniLibsProjectOnly
+> Task :data:widgets:mergeDebugJniLibFolders
+> Task :data:widgets:mergeDebugNativeLibs NO-SOURCE
+> Task :data:widgets:copyDebugJniLibsProjectOnly
+> Task :data:websites:mergeDebugJniLibFolders
+> Task :data:websites:mergeDebugNativeLibs NO-SOURCE
+> Task :data:wikipedia:mergeDebugJniLibFolders
+> Task :data:wikipedia:mergeDebugNativeLibs NO-SOURCE
+> Task :data:websites:copyDebugJniLibsProjectOnly
+> Task :data:wikipedia:copyDebugJniLibsProjectOnly
+> Task :libs:address-formatter:mergeDebugJniLibFolders
+> Task :libs:address-formatter:mergeDebugNativeLibs NO-SOURCE
+> Task :libs:material-color-utilities:mergeDebugJniLibFolders
+> Task :libs:material-color-utilities:mergeDebugNativeLibs NO-SOURCE
+> Task :data:weather:copyDebugJniLibsProjectOnly
+> Task :libs:address-formatter:copyDebugJniLibsProjectOnly
+> Task :libs:material-color-utilities:copyDebugJniLibsProjectOnly
+> Task :libs:owncloud:mergeDebugJniLibFolders
+> Task :libs:owncloud:mergeDebugNativeLibs NO-SOURCE
+> Task :libs:webdav:mergeDebugJniLibFolders
+> Task :libs:nextcloud:mergeDebugJniLibFolders
+> Task :libs:webdav:mergeDebugNativeLibs NO-SOURCE
+> Task :libs:owncloud:copyDebugJniLibsProjectOnly
+> Task :libs:nextcloud:mergeDebugNativeLibs NO-SOURCE
+> Task :libs:webdav:copyDebugJniLibsProjectOnly
+> Task :services:accounts:mergeDebugJniLibFolders
+> Task :services:accounts:mergeDebugNativeLibs NO-SOURCE
+> Task :services:accounts:copyDebugJniLibsProjectOnly
+> Task :services:backup:mergeDebugJniLibFolders
+> Task :services:backup:mergeDebugNativeLibs NO-SOURCE
+> Task :services:badges:mergeDebugJniLibFolders
+> Task :services:badges:mergeDebugNativeLibs NO-SOURCE
+> Task :services:backup:copyDebugJniLibsProjectOnly
+> Task :services:badges:copyDebugJniLibsProjectOnly
+> Task :services:feed:mergeDebugJniLibFolders
+> Task :services:feed:mergeDebugNativeLibs NO-SOURCE
+> Task :services:favorites:mergeDebugJniLibFolders
+> Task :services:favorites:mergeDebugNativeLibs NO-SOURCE
+> Task :services:feed:copyDebugJniLibsProjectOnly
+> Task :services:favorites:copyDebugJniLibsProjectOnly
+> Task :services:global-actions:mergeDebugJniLibFolders
+> Task :services:global-actions:mergeDebugNativeLibs NO-SOURCE
+> Task :services:icons:mergeDebugJniLibFolders
+> Task :services:icons:mergeDebugNativeLibs NO-SOURCE
+> Task :services:global-actions:copyDebugJniLibsProjectOnly
+> Task :libs:nextcloud:copyDebugJniLibsProjectOnly
+> Task :services:icons:copyDebugJniLibsProjectOnly
+> Task :services:music:mergeDebugJniLibFolders
+> Task :services:plugins:mergeDebugJniLibFolders
+> Task :services:search:mergeDebugJniLibFolders
+> Task :services:search:mergeDebugNativeLibs NO-SOURCE
+> Task :services:music:mergeDebugNativeLibs NO-SOURCE
+> Task :services:music:copyDebugJniLibsProjectOnly
+> Task :services:search:copyDebugJniLibsProjectOnly
+> Task :services:tags:mergeDebugJniLibFolders
+> Task :services:widgets:mergeDebugJniLibFolders
+> Task :services:tags:mergeDebugNativeLibs NO-SOURCE
+> Task :services:widgets:mergeDebugNativeLibs NO-SOURCE
+> Task :services:plugins:mergeDebugNativeLibs NO-SOURCE
+> Task :services:tags:copyDebugJniLibsProjectOnly
+> Task :services:widgets:copyDebugJniLibsProjectOnly
+> Task :services:plugins:copyDebugJniLibsProjectOnly
+> Task :app:app:writeDefaultDebugAppMetadata
+> Task :app:app:writeDefaultDebugSigningConfigVersions
+> Task :app:app:preFdroidDebugBuild UP-TO-DATE
+> Task :app:app:mergeFdroidDebugNativeDebugMetadata NO-SOURCE
+> Task :app:app:generateFdroidDebugBuildConfig
+> Task :app:app:extractFdroidDebugSupportedLocales FROM-CACHE
+> Task :app:app:mapFdroidDebugSourceSetPaths
+> Task :app:app:validateSigningDefaultDebug
+> Task :app:app:generateFdroidDebugResources FROM-CACHE
+> Task :app:app:generateFdroidDebugLocaleConfig FROM-CACHE
+> Task :app:app:processFdroidDebugNavigationResources FROM-CACHE
+> Task :app:app:javaPreCompileFdroidDebug FROM-CACHE
+> Task :app:app:generateFdroidDebugAssets UP-TO-DATE
+> Task :app:app:packageFdroidDebugResources
+> Task :app:app:parseFdroidDebugLocalResources FROM-CACHE
+> Task :app:app:generateFdroidDebugRFile FROM-CACHE
+> Task :app:app:processDefaultDebugManifest
+> Task :core:base:compileDebugLibraryResources
+> Task :app:app:generateFdroidDebugGlobalSynthetics FROM-CACHE
+> Task :app:app:processDefaultDebugManifestForPackage
+> Task :app:app:mergeFdroidDebugAssets
+> Task :app:app:compressFdroidDebugAssets FROM-CACHE
+> Task :app:app:desugarFdroidDebugFileDependencies FROM-CACHE
+> Task :app:app:compileFdroidDebugNavigationResources FROM-CACHE
+> Task :app:app:checkFdroidDebugAarMetadata
+> Task :app:app:createFdroidDebugCompatibleScreenManifests
+> Task :app:app:extractDeepLinksFdroidDebug FROM-CACHE
+> Task :app:app:checkFdroidDebugDuplicateClasses
+> Task :app:app:processFdroidDebugMainManifest
+> Task :app:app:mergeDefaultDebugNativeLibs
+> Task :app:app:processFdroidDebugManifest
+> Task :app:app:processFdroidDebugManifestForPackage
+> Task :app:app:mergeFdroidDebugJniLibFolders
+> Task :app:app:stripDefaultDebugDebugSymbols
+> Task :app:app:validateSigningFdroidDebug
+> Task :app:app:mergeFdroidDebugNativeLibs
+> Task :app:app:writeFdroidDebugAppMetadata
+> Task :app:app:writeFdroidDebugSigningConfigVersions
+> Task :app:app:compileFdroidDebugKotlin
+> Task :app:app:processFdroidDebugJavaRes
+> Task :app:app:compileFdroidDebugJavaWithJavac
+> Task :app:app:stripFdroidDebugDebugSymbols
+> Task :app:app:mergeDefaultDebugResources
+> Task :app:app:mergeFdroidDebugJavaResource
+> Task :app:app:mergeFdroidDebugResources
+> Task :app:app:mergeExtDexFdroidDebug
+> Task :app:app:processFdroidDebugResources
+> Task :app:app:processDefaultDebugResources
+> Task :app:app:dexBuilderDefaultDebug
+> Task :app:app:dexBuilderFdroidDebug
+> Task :app:app:mergeProjectDexDefaultDebug
+> Task :app:app:mergeProjectDexFdroidDebug

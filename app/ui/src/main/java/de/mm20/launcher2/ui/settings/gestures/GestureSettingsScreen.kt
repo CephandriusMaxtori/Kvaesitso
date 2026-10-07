@@ -53,6 +53,7 @@ fun GestureSettingsScreen() {
     val viewModel: GestureSettingsScreenVM = viewModel()
 
     val hasPermission by viewModel.hasPermission.collectAsStateWithLifecycle(null)
+    val hasCameraPermission by viewModel.hasCameraPermission.collectAsStateWithLifecycle(null)
 
     val options = buildSet {
         add(GestureAction.NoAction::class)
@@ -64,6 +65,7 @@ fun GestureSettingsScreen() {
         add(GestureAction.Search::class)
         add(GestureAction.Widgets::class)
         add(GestureAction.Launch::class)
+        if (viewModel.hasFlashlight) add(GestureAction.Flashlight::class)
     }
 
     val shortcutOptions by viewModel.shortcutOptions.collectAsStateWithLifecycle(emptyList())
@@ -80,10 +82,12 @@ fun GestureSettingsScreen() {
         item {
             PreferenceCategory {
                 val swipeDown by viewModel.swipeDown.collectAsStateWithLifecycle(null)
-                GuardedPreference(
-                    locked = hasPermission == false && requiresAccessibilityService(swipeDown),
-                    description = stringResource(R.string.missing_permission_accessibility_gesture_settings),
+                GuardedGesturePreference(
+                    action = swipeDown,
+                    hasPermission = hasPermission,
+                    hasCameraPermission = hasCameraPermission,
                     onUnlock = { viewModel.requestPermission(context as AppCompatActivity) },
+                    onUnlockCamera = { viewModel.requestCameraPermission(context as AppCompatActivity) },
                 ) {
                     GesturePreference(
                         title = stringResource(R.string.preference_gesture_swipe_down),
@@ -97,10 +101,12 @@ fun GestureSettingsScreen() {
                 }
 
                 val swipeLeft by viewModel.swipeLeft.collectAsStateWithLifecycle(null)
-                GuardedPreference(
-                    locked = hasPermission == false && requiresAccessibilityService(swipeLeft),
-                    description = stringResource(R.string.missing_permission_accessibility_gesture_settings),
+                GuardedGesturePreference(
+                    action = swipeLeft,
+                    hasPermission = hasPermission,
+                    hasCameraPermission = hasCameraPermission,
                     onUnlock = { viewModel.requestPermission(context as AppCompatActivity) },
+                    onUnlockCamera = { viewModel.requestCameraPermission(context as AppCompatActivity) },
                 ) {
                     GesturePreference(
                         title = stringResource(R.string.preference_gesture_swipe_left),
@@ -114,10 +120,12 @@ fun GestureSettingsScreen() {
                 }
 
                 val swipeRight by viewModel.swipeRight.collectAsStateWithLifecycle(null)
-                GuardedPreference(
-                    locked = hasPermission == false && requiresAccessibilityService(swipeRight),
-                    description = stringResource(R.string.missing_permission_accessibility_gesture_settings),
+                GuardedGesturePreference(
+                    action = swipeRight,
+                    hasPermission = hasPermission,
+                    hasCameraPermission = hasCameraPermission,
                     onUnlock = { viewModel.requestPermission(context as AppCompatActivity) },
+                    onUnlockCamera = { viewModel.requestCameraPermission(context as AppCompatActivity) },
                 ) {
                     GesturePreference(
                         title = stringResource(R.string.preference_gesture_swipe_right),
@@ -131,10 +139,12 @@ fun GestureSettingsScreen() {
                 }
 
                 val swipeUp by viewModel.swipeUp.collectAsStateWithLifecycle(null)
-                GuardedPreference(
-                    locked = hasPermission == false && requiresAccessibilityService(swipeUp),
-                    description = stringResource(R.string.missing_permission_accessibility_gesture_settings),
+                GuardedGesturePreference(
+                    action = swipeUp,
+                    hasPermission = hasPermission,
+                    hasCameraPermission = hasCameraPermission,
                     onUnlock = { viewModel.requestPermission(context as AppCompatActivity) },
+                    onUnlockCamera = { viewModel.requestCameraPermission(context as AppCompatActivity) },
                 ) {
                     GesturePreference(
                         title = stringResource(R.string.preference_gesture_swipe_up),
@@ -148,10 +158,12 @@ fun GestureSettingsScreen() {
                 }
 
                 val doubleTap by viewModel.doubleTap.collectAsStateWithLifecycle(null)
-                GuardedPreference(
-                    locked = hasPermission == false && requiresAccessibilityService(doubleTap),
-                    description = stringResource(R.string.missing_permission_accessibility_gesture_settings),
+                GuardedGesturePreference(
+                    action = doubleTap,
+                    hasPermission = hasPermission,
+                    hasCameraPermission = hasCameraPermission,
                     onUnlock = { viewModel.requestPermission(context as AppCompatActivity) },
+                    onUnlockCamera = { viewModel.requestCameraPermission(context as AppCompatActivity) },
                 ) {
                     GesturePreference(
                         title = stringResource(R.string.preference_gesture_double_tap),
@@ -165,10 +177,12 @@ fun GestureSettingsScreen() {
                 }
 
                 val longPress by viewModel.longPress.collectAsStateWithLifecycle(null)
-                GuardedPreference(
-                    locked = hasPermission == false && requiresAccessibilityService(longPress),
-                    description = stringResource(R.string.missing_permission_accessibility_gesture_settings),
+                GuardedGesturePreference(
+                    action = longPress,
+                    hasPermission = hasPermission,
+                    hasCameraPermission = hasCameraPermission,
                     onUnlock = { viewModel.requestPermission(context as AppCompatActivity) },
+                    onUnlockCamera = { viewModel.requestCameraPermission(context as AppCompatActivity) },
                 ) {
                     GesturePreference(
                         title = stringResource(R.string.preference_gesture_long_press),
@@ -180,11 +194,14 @@ fun GestureSettingsScreen() {
                         widgetOptions = widgetOptions,
                     )
                 }
+
                 val homeButton by viewModel.homeButton.collectAsStateWithLifecycle(null)
-                GuardedPreference(
-                    locked = hasPermission == false && requiresAccessibilityService(homeButton),
-                    description = stringResource(R.string.missing_permission_accessibility_gesture_settings),
+                GuardedGesturePreference(
+                    action = homeButton,
+                    hasPermission = hasPermission,
+                    hasCameraPermission = hasCameraPermission,
                     onUnlock = { viewModel.requestPermission(context as AppCompatActivity) },
+                    onUnlockCamera = { viewModel.requestCameraPermission(context as AppCompatActivity) },
                 ) {
                     GesturePreference(
                         title = stringResource(R.string.preference_gesture_home_button),
@@ -199,6 +216,41 @@ fun GestureSettingsScreen() {
             }
         }
     }
+}
+
+/**
+ * Wraps a [GesturePreference] and shows a banner asking for the permission that the given
+ * [action] requires, if that permission is missing.
+ */
+@Composable
+private fun GuardedGesturePreference(
+    action: GestureAction?,
+    hasPermission: Boolean?,
+    hasCameraPermission: Boolean?,
+    onUnlock: () -> Unit,
+    onUnlockCamera: () -> Unit,
+    preference: @Composable () -> Unit,
+) {
+    val needsCameraPermission = action is GestureAction.Flashlight && hasCameraPermission == false
+    val needsAccessibilityPermission =
+        !needsCameraPermission && hasPermission == false && requiresAccessibilityService(action)
+
+    GuardedPreference(
+        locked = needsCameraPermission || needsAccessibilityPermission,
+        description = stringResource(
+            if (needsCameraPermission) {
+                R.string.missing_permission_camera_gesture_settings
+            } else {
+                R.string.missing_permission_accessibility_gesture_settings
+            }
+        ),
+        onUnlock = when {
+            needsCameraPermission -> onUnlockCamera
+            needsAccessibilityPermission -> onUnlock
+            else -> null
+        },
+        preference = preference,
+    )
 }
 
 fun requiresAccessibilityService(action: GestureAction?): Boolean {
