@@ -11,12 +11,22 @@ higher is recommended for the best experience.
 
 The latest APK can be downloaded from [GitHub](https://github.com/MM2-0/Kvaesitso/releases).
 
-To make sure that you get always notified about the latest updates, it's recommended that you add my
+To make sure that you get always notified about the latest updates, use an F-Droid client and add my
 F-Droid repo: https://fdroid.mm20.de
 
 You can also download it from
 the [IzzyOnDroid](https://apt.izzysoft.de/fdroid/index/apk/de.mm20.launcher2.release) F-Droid repo
 but keep in mind that updates are usually delayed for a day when using that repo.
+
+### Using Obtainium
+
+[Obtainium](https://obtanium.imranr.dev) installs and updates apps straight from their release
+pages, so you can track Kvaesitso without an F-Droid client.
+
+The easiest way is **Settings > About > Get updates with Obtainium**, which opens Obtainium's Add
+App screen pre-filled with Kvaesitso. To add it manually instead, open Obtainium and enter
+`https://github.com/MM2-0/Kvaesitso`. Obtainium recognizes GitHub by itself, so there is no need to
+change the source.
 
 If you want to verify the app's signature before installing, here are the signing key fingerprints:
 

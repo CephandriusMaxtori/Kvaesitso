@@ -127,6 +127,14 @@ fun AboutSettingsScreen() {
                         })
                     }
                 )
+                Preference(
+                    icon = R.drawable.system_update_alt_24px,
+                    title = stringResource(id = R.string.preference_about_obtainium),
+                    summary = stringResource(id = R.string.preference_about_obtainium_summary),
+                    onClick = {
+                        Obtainium.addKvaesitso(context, context.packageName)
+                    }
+                )
             }
         }
         item {

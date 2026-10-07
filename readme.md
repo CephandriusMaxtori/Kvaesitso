@@ -22,6 +22,23 @@ https://fdroid.mm20.de/repo/
 
 The same version is also available in [IzzyOnDroid's repository](https://apt.izzysoft.de/fdroid/index/apk/de.mm20.launcher2.release).
 
+### Using Obtainium
+
+[Obtainium](https://obtanium.imranr.dev) installs and updates apps straight from their release pages.
+You can add Kvaesitso in one tap from **Settings > About > Get updates with Obtainium**, which opens
+Obtainium's Add App screen pre-filled with this app. Alternatively, add
+`https://github.com/MM2-0/Kvaesitso` manually; Obtainium detects GitHub on its own and will not ask
+you to pick a source.
+
+<a href="obtainium://app/%7B%22id%22%3A%22de.mm20.launcher2.release%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2FMM2-0%2FKvaesitso%22%2C%22author%22%3A%22MM2-0%22%2C%22name%22%3A%22Kvaesitso%22%7D">
+  <img src="https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22de.mm20.launcher2.release%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2FMM2-0%2FKvaesitso%22%2C%22author%22%3A%22MM2-0%22%2C%22name%22%3A%22Kvaesitso%22%7D" alt="Get it on Obtainium" width="161" height="48">
+</a>
+
+> [!NOTE]
+> Obtainium tracks the GitHub version of the launcher, which is signed differently from the official
+> F-Droid builds. Installing one over the other will fail; see
+> [Launcher Cannot Be Updated](https://kvaesitso.mm20.de/docs/user-guide/troubleshooting/update-not-installed).
+
 ### Manual installation
 
 You can also download the latest release from

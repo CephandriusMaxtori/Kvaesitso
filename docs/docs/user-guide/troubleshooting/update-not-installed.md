@@ -19,6 +19,12 @@ There are two different release versions of Kvaesitso:
   weather providers available. Furthermore, new versions are usually released with a delay (a few
   days up to a week).
 
+::: warning
+[Obtainium](https://obtanium.imranr.dev) tracks the GitHub version. If you installed Kvaesitso with
+Obtainium and then added it to an F-Droid client, the F-Droid client will fail to install its
+version over the Obtainium one, because they are signed with different keys.
+:::
+
 ## Check which version you have installed
 
 Go to Settings > About. If the version number is something like `x.y.z`, you have the GitHub version

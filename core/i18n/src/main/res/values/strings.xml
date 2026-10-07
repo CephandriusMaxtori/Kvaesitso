@@ -564,6 +564,8 @@
     <string name="preference_owncloud_signin_summary">Sign in to search your Owncloud server</string>
     <string name="preference_about_telegram">Telegram group</string>
     <string name="preference_about_fdroid">F-Droid repository</string>
+    <string name="preference_about_obtainium">Get updates with Obtainium</string>
+    <string name="preference_about_obtainium_summary">Adds this app to Obtainium, so you get notified about new releases</string>
     <string name="preference_enforce_icon_shape">Enforce shape</string>
     <string name="preference_enforce_icon_shape_summary">Apply shape to all icons including those that would normally not support it</string>
     <string name="preference_category_license">License</string>
