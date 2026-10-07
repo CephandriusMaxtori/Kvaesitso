@@ -52,20 +52,3 @@ dependencies {
     implementation(libs.androidx.core)
     implementation(libs.androidx.appcompat)
 }
-
-subprojects {
-    plugins.withId("com.android.library") {
-        extensions.configure<com.android.build.gradle.LibraryExtension>("android") {
-            lint {
-                abortOnError = false
-            }
-        }
-    }
-    plugins.withId("com.android.application") {
-        extensions.configure<com.android.build.gradle.AppExtension>("android") {
-            lint {
-                abortOnError = false
-            }
-        }
-    }
-}

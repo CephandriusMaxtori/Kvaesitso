@@ -6,6 +6,17 @@ plugins {
     alias(libs.plugins.android.application)
 }
 
+/**
+ * Reads a signing credential from a Gradle property first, then from an environment variable.
+ *
+ * Prefer putting these in `~/.gradle/gradle.properties` (or a `gradle.properties` that is not
+ * checked in) rather than passing them on the command line, so that they stay out of shell
+ * history and process listings.
+ */
+fun signingCredential(property: String, env: String): String? =
+    providers.gradleProperty(property).orNull?.takeIf { it.isNotBlank() }
+        ?: providers.environmentVariable(env).orNull?.takeIf { it.isNotBlank() }
+
 android {
     androidResources {
         generateLocaleConfig = true
@@ -45,6 +56,21 @@ android {
             keyAlias = System.getenv("SIGNING_KEY_ALIAS")
             keyPassword = System.getenv("SIGNING_KEY_PASSWORD")
         }
+
+        // Locally built custom version. The keystore is deliberately not in git, and is
+        // configured through KVAESITSO_* Gradle properties / env vars so that the password never
+        // has to be committed or passed on the command line.
+        create("custom") {
+            val keystore = rootProject.file(
+                signingCredential("KVAESITSO_KEYSTORE", "KVAESITSO_KEYSTORE") ?: "kvaesitso.jks"
+            )
+            if (keystore.exists()) {
+                storeFile = keystore
+                storePassword = signingCredential("KVAESITSO_KEYSTORE_PASSWORD", "KVAESITSO_KEYSTORE_PASSWORD")
+                keyAlias = signingCredential("KVAESITSO_KEY_ALIAS", "KVAESITSO_KEY_ALIAS")
+                keyPassword = signingCredential("KVAESITSO_KEY_PASSWORD", "KVAESITSO_KEY_PASSWORD")
+            }
+        }
     }
 
     buildTypes {
@@ -56,6 +82,33 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+
+            // defaultConfig signs everything with the debug key. Fall back to it so that CI and
+            // fresh checkouts still build, but say so loudly: a debug-signed release cannot be
+            // distributed and must not be uploaded anywhere.
+            val custom = signingConfigs.getByName("custom")
+            val customUsable = custom.storeFile != null &&
+                custom.storePassword != null &&
+                custom.keyAlias != null &&
+                custom.keyPassword != null
+            if (customUsable) {
+                signingConfig = custom
+            } else {
+                signingConfig = signingConfigs.getByName("debug")
+                val missing = listOfNotNull(
+                    custom.storeFile?.let { null },
+                    "KVAESITSO_KEYSTORE_PASSWORD".takeIf { custom.storePassword == null },
+                    "KVAESITSO_KEY_ALIAS".takeIf { custom.keyAlias == null },
+                    "KVAESITSO_KEY_PASSWORD".takeIf { custom.keyPassword == null },
+                )
+                logger.warn(
+                    "WARNING: custom keystore at ${rootProject.file("kvaesitso.jks")} is not " +
+                        "usable (missing: ${missing.ifEmpty { listOf("keystore file") }}). " +
+                        "Release builds will be signed with the Android DEBUG key and are NOT " +
+                        "distributable. Put the credentials in ~/.gradle/gradle.properties to " +
+                        "sign with a private key."
+                )
+            }
         }
         debug {
             applicationIdSuffix = ".debug"
